@@ -1240,6 +1240,9 @@ p {
 /* ----------------------------------------------- */
 .navbar-inverse {
   margin-bottom: 0;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
   background-color: rgba(255,255,255,0.9);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   border: none;
@@ -1249,6 +1252,7 @@ p {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
+
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
   border-color: #0d1216;
@@ -1291,29 +1295,28 @@ p {
 }
 .navbar-inverse .navbar-toggle:hover {
   color: #4d6d88;
-  background-color: #33485b;
+  background-color: #8CC640;
 }
 .navbar-inverse .navbar-toggle.is-open {
   color: #fff;
-  background-color: #33485b;
+  background-color: #8CC640;
 }
 .navbar-inverse .navbar-nav > li > a {
-  color: #fff;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  color: #444;
 }
 .navbar-inverse .navbar-nav > li > a:hover {
-  background-color: #243441;
+  background-color: #8CC640;
 }
 .navbar-inverse .navbar-nav > li.active > a,
 .navbar-inverse .navbar-nav > li.active > a:hover,
 .navbar-inverse .navbar-nav > li.active > a:active,
 .navbar-inverse .navbar-nav > li.active > a:focus {
-  background-color: #243441;
+  background-color: #8CC640;
 }
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:hover,
 .navbar-inverse .navbar-nav > .open > a:focus {
-  background-color: #243441;
+  background-color: #8CC640;
 }
 .navbar-inverse .navbar-nav > .navbar-profile > a {
   height: 50px;
@@ -1405,15 +1408,15 @@ p {
   padding-top: 20px;
   padding-bottom: 20px;
   font-weight: 600;
-  border-bottom: 1px solid transparent;
+  /*border-bottom: 1px solid transparent;*/
 }
 .navbar-inverse .navbar-nav > li > a:hover {
-  background: #2e4151;
-  border-bottom-color: #567a99;
+  background: #8CC640;
+  /*border-bottom-color: #567a99;*/
 }
 .navbar-inverse .navbar-nav > li.active > a {
-  background: #23313d;
-  border-bottom-color: #d74b4b;
+  background: #8CC640;
+  /*border-bottom-color: #d74b4b;*/
 }
 .navbar-social-label {
   display: inline;
