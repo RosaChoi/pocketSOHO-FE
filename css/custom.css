@@ -1,6 +1,7 @@
 /* Setting Color Palette*/
 /* Setting Background Image*/
 /* BoxShadow Prefix*/
+/* Sign Up Button*/
 /* BODY*/
 /* ----------------------------------------------- */
 /* NAV-BAR*/
@@ -23,6 +24,7 @@
 .masthead {
   height: 600px;
   padding-top: 3em;
+  box-shadow: none;
   background: url(../img/masthead/landing-bg.jpg) center top no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
@@ -31,10 +33,64 @@
 
 .masthead-text {
   margin-top: 8.5em;
-  color: #1B2846; }
+  color: #1B2846;
+  height: 300px; }
 
 .masthead-text p {
   font-size: 16px;
   text-shadow: none; }
+
+.masthead-actions .btn-primary,
+.btn-secondary {
+  padding: 0.6em 2em;
+  font-size: 20px;
+  line-height: 1.5;
+  background-color: #8CC640;
+  border: 1px solid #8CC640;
+  border-radius: 0;
+  text-shadow: none;
+  box-shadow: none; }
+
+.btn-secondary {
+  background-color: transparent;
+  border: 2px solid #F48A1F;
+  color: #F48A1F; }
+
+.btn-secondary:hover {
+  background-color: #F48A1F;
+  border: 2px solid #F48A1F;
+  color: #FFFFFF; }
+
+.masthead-actions .btn-primary:hover {
+  background-color: transparent;
+  border: 2px solid #1B2846;
+  color: #1B2846; }
+
+.masthead-carousel .carousel-control.left,
+.masthead-carousel .carousel-control.right {
+  background-color: #8CC640; }
+
+/*Masthead /Slide 1 - Sign Up Form*/
+h3.text-center {
+  text-transform: uppercase;
+  color: #1B2846; }
+
+p.text-center {
+  font-size: 14px;
+  color: #1B2846; }
+
+.form-control,
+.well {
+  color: #444444;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid #F48A1F;
+  border-radius: 0; }
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 5px rgba(244, 138, 31, 0.8);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(244, 138, 31, 0.8); }
 
 /*# sourceMappingURL=custom.css.map */

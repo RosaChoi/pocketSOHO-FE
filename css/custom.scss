@@ -23,6 +23,20 @@ $ligthGray: #CCCCCC;
 	-o-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
+/* Sign Up Button*/
+
+@mixin signupButton {
+	padding: 0.6em 2em;
+	font-size: 20px;
+	line-height: 1.5;
+	background-color: $mainColor1;
+	border: 1px solid $mainColor1;
+	border-radius: 0;
+	text-shadow: none;
+	box-shadow: none;
+}
+
+
 
 /* BODY*/
 /* ----------------------------------------------- */
@@ -55,6 +69,7 @@ $ligthGray: #CCCCCC;
 .masthead {
 	height: 600px;
 	padding-top: 3em;
+	box-shadow: none;
 	background: url(../img/masthead/landing-bg.jpg) center top no-repeat;
 	@include bgimg;
 }
@@ -62,9 +77,60 @@ $ligthGray: #CCCCCC;
 .masthead-text {
 	margin-top: 8.5em;
 	color: $mainColor3;
+	height: 300px;
 }
 
 .masthead-text p {
 	font-size: 16px;
 	text-shadow: none;
+}
+
+.masthead-actions .btn-primary,
+.btn-secondary {
+	@include signupButton;
+}
+.btn-secondary {
+	background-color: transparent;
+	border: 2px solid $mainColor2;
+	color: $mainColor2;
+}
+
+.btn-secondary:hover {
+	background-color: $mainColor2;
+	border: 2px solid $mainColor2;
+	color: #FFFFFF;
+}
+.masthead-actions .btn-primary:hover {
+	background-color: transparent;
+	border: 2px solid $mainColor3;
+	color: $mainColor3;
+}
+.masthead-carousel .carousel-control.left, 
+.masthead-carousel .carousel-control.right {
+	background-color: $mainColor1;
+}
+
+/*Masthead /Slide 1 - Sign Up Form*/
+
+h3.text-center {
+	text-transform: uppercase;
+	color: $mainColor3;
+}
+p.text-center {
+	font-size: 14px;
+	color: $mainColor3;
+}
+.form-control,
+.well {
+	color: $darkGray;
+	background-color: rgba(255,255,255,0.2);
+	border: 1px solid $mainColor2;
+	border-radius: 0;
+}
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+	background-color: rgba(255,255,255,0.6);
+	box-shadow: 0 0 5px rgba(244, 138, 31, 0.8);
+	padding: 3px 0px 3px 3px;
+	margin: 5px 1px 3px 0px;
+	border: 1px solid rgba(244, 138, 31, 0.8);
 }
