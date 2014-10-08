@@ -1,4 +1,5 @@
 /* Setting Color Palette*/
+/* Font*/
 /* Setting Background Image*/
 /* BoxShadow Prefix*/
 /* Sign Up Button*/
@@ -92,5 +93,56 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
   padding: 3px 0px 3px 3px;
   margin: 5px 1px 3px 0px;
   border: 1px solid rgba(244, 138, 31, 0.8); }
+
+/*About Section*/
+/* ----------------------------------------------- */
+.content-title span {
+  border-bottom: 1px solid #8CC640; }
+
+.features {
+  padding-top: 1.5em;
+  font-size: 3em;
+  font-family: "Open-Sans", sans-serif;
+  -webkit-font-smoothing: antialiased; }
+
+.pocketfeature {
+  width: 70%;
+  margin-bottom: 2.2em; }
+
+.mini-feature {
+  text-align: center; }
+
+.mini-feature-title {
+  text-transform: uppercase;
+  color: #1B2846;
+  font-size: 19px;
+  font-weight: 700;
+  font-family: "Open-Sans", sans-serif;
+  -webkit-font-smoothing: antialiased; }
+
+.mini-feature-text p {
+  font-size: 15px;
+  padding: 1.15em; }
+
+.feature-description {
+  font-size: 2em;
+  color: #8CC640; }
+
+.col-sm-6 p {
+  font-size: 15px; }
+
+.text-primary {
+  color: #8CC640; }
+
+.smallbtn {
+  border: 1px solid #8CC640;
+  text-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+  font-size: 20px; }
+
+.smallbtn:hover {
+  background-color: #8CC640;
+  color: #FFFFFF; }
 
 /*# sourceMappingURL=custom.css.map */

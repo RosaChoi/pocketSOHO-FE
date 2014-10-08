@@ -6,6 +6,12 @@ $mainColor3: #1B2846;
 $darkGray: #444444;
 $ligthGray: #CCCCCC;
 
+/* Font*/
+@mixin mainFont {
+	font-family: "Open-Sans", sans-serif;
+    	-webkit-font-smoothing: antialiased;
+}
+
 /* Setting Background Image*/
 @mixin bgimg {
 	background-size: cover;
@@ -133,4 +139,57 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 	padding: 3px 0px 3px 3px;
 	margin: 5px 1px 3px 0px;
 	border: 1px solid rgba(244, 138, 31, 0.8);
+}
+
+/*About Section*/
+/* ----------------------------------------------- */
+
+.content-title span { 
+	border-bottom: 1px solid $mainColor1;
+}
+
+.features {
+	padding-top: 1.5em;
+	font-size: 3em;
+	@include mainFont;
+}
+
+.pocketfeature {
+	width: 70%;
+	margin-bottom: 2.2em;
+}
+.mini-feature {
+	text-align: center;
+}
+.mini-feature-title {
+	text-transform: uppercase;
+	color: $mainColor3;
+	font-size: 19px;
+	font-weight: 700;
+	@include mainFont
+}
+.mini-feature-text p {
+	font-size: 15px;
+	padding: 1.15em;
+}
+.feature-description {
+	font-size: 2em;
+	color: $mainColor1;
+}
+.col-sm-6 p {
+	font-size: 15px;
+}
+.text-primary {
+	color: $mainColor1;
+}
+.smallbtn {
+	border: 1px solid $mainColor1;
+	text-shadow: none;
+	box-shadow: none;
+	border-radius: 0;
+	font-size: 20px;
+}
+.smallbtn:hover {
+	background-color: $mainColor1;
+	color: #FFFFFF;
 }

@@ -1544,10 +1544,10 @@ p {
 .tab-pane {
   position: relative;
 }
-.content {
+/*.content {
   padding-top: 40px;
   padding-bottom: 70px;
-}
+}*/
 .content-title {
   position: relative;
   display: block;
@@ -1863,7 +1863,7 @@ p {
 }
 .mini-feature-text {
   display: block;
-  padding-left: 60px;
+  /*padding-left: 60px;*/
 }
 .mini-feature-title {
   color: #555;
