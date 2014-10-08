@@ -46,97 +46,41 @@
     <div class="container">
 
       <div class="navbar-header">
-        <a href="./" class="navbar-brand navbar-brand-img">
+        <a href="index.html" class="navbar-brand navbar-brand-img">
           <img id="logo" src="./img/logo.svg" alt="pocketSOHO">
         </a>
-        
-        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <i class="fa fa-bars"></i>
-        </button>
       </div> <!-- /.navbar-header -->
 
 
-      <nav class="collapse navbar-collapse" role="navigation">
+      <nav id="main-nav" class="collapse navbar-collapse" role="navigation">
 
         <ul class="nav navbar-nav navbar-right mainnav-menu">
 
           <li class="active">
-            <a href="./index.html">Home</a>
+            <a href="index.html">Home</a>
           </li>    
 
           <li class="">
-            <a href="./page-features.html">Features</a>
+            <a data-target-id="about" href="#">About</a>
           </li>      
 
           <li class="">
-            <a href="./page-faq.html">FAQ</a>
+            <a data-target-id="team" href="#">Team</a>
           </li>
 
           <li class="">
-            <a href="./page-pricing.html">Pricing</a>
+            <a data-target-id="pricing" href="#">Pricing</a>
           </li>   
 
           <li class="">
-            <a href="./page-contact.html">Contact</a>
-          </li>     
-
-          <!-- <li class="dropdown">
-
-            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">
-            Dropdown
-            <i class="mainnav-caret"></i>
-            </a>
-
-            <ul class="dropdown-menu" role="menu">
-              <li>
-                <a href="./page-notifications.html">
-                <i class="fa fa-bell"></i> 
-                &nbsp;&nbsp;Notifications
-                </a>
-              </li>     
-
-              <li>
-                <a href="./components-icons.html">
-                <i class="fa fa-smile-o"></i> 
-                &nbsp;&nbsp;Font Icons
-                </a>
-              </li> 
-
-            </ul>
-
-          </li> -->
+            <a data-target-id="contactus" href="#">Contact</a>
+          </li> 
 
           <li>
             <a href="../admin/account-login-social.html">Login</a>
-          </li>    
+          </li>      
 
         </ul>
-
-        <!-- <ul class="nav navbar-nav navbar-social navbar-left">   
-
-          <li>
-            <a href="javascript:;" class="ui-tooltip" title="Facebook" data-placement="bottom">
-              <i class="fa fa-facebook"></i>
-              <span class="navbar-social-label">Facebook</span>
-            </a>
-          </li>   
-
-          <li>
-            <a href="javascript:;" class="ui-tooltip" title="Twitter" data-placement="bottom">
-              <i class="fa fa-twitter"></i>
-              <span class="navbar-social-label">Twitter</span>
-            </a>
-          </li>   
-
-          <li>
-            <a href="javascript:;" class="ui-tooltip" title="Google+" data-placement="bottom">
-              <i class="fa fa-google-plus"></i>
-              <span class="navbar-social-label">Google+</span>
-            </a>
-          </li>         
-
-        </ul> -->
 
       </nav>
 
@@ -154,58 +98,21 @@
         <div id="masthead-carousel" class="carousel masthead-carousel slide">
           <div class="carousel-inner">
 
-            <div class="item active">
+            <div id="slide1" class="item active">
 
               <div class="row">
 
                 <div class="col-md-6 masthead-text animated fadeInDownBig">
-                  <h1 class="masthead-title">Don't feel limited to color schemes provided.</h1>
-
+                  <h1 class="masthead-title">Introducing pocketSOHO</h1>
                   <p class="masthead-">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi ut aliquip ex ea commodo consequat.
+                  Small and Home Business Owner Super Hero! <br/>
+                  Love being your own boss but hate the admin part?
                   </p>
-
                   <br>
 
                   <div class="masthead-actions">
-                    <a href="./page-features.html" class="btn btn-transparent btn-jumbo">
-                    Learn More
-                    </a>
-
                     <a href="../admin/account-signup.html" class="btn btn-primary btn-jumbo">
-                    Create an Account
-                    </a>
-                  </div> <!-- /.masthead-actions -->
-                </div> <!-- /.masthead-text -->
-
-                <div class="col-md-6 masthead-img animated fadeInUpBig">
-                  <img src="img/masthead/mobile.png" alt="slide2" class="img-responsive" />     
-                </div> <!-- /.masthead-img -->
-
-              </div> <!-- /.row -->
-
-            </div> <!-- /.item -->
-
-            <div class="item">
-
-              <div class="row">
-                
-                <div class="col-md-6 masthead-text animated fadeInLeftBig">
-                  <h1 class="masthead-title">Don't feel limited to color schemes provided.</h1>
-
-                  <p class="masthead-">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi ut aliquip ex ea commodo consequat.
-                  </p>
-
-                  <br>
-
-                  <div class="masthead-actions">
-                    <a href="./page-features.html" class="btn btn-transparent btn-jumbo">
-                    Learn More
-                    </a>
-
-                    <a href="../admin/account-signup.html" class="btn btn-primary btn-jumbo">
-                    Create an Account
+                    Start Your Free Trial
                     </a>
                   </div> <!-- /.masthead-actions -->
                 </div> <!-- /.masthead-text -->
@@ -215,7 +122,8 @@
 
                     <h3 class="text-center">Start Your Free Trial!</h3>
 
-                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, earum.</p>
+                    <p class="text-center">Be your own boss. <br/>
+                     Stop wasting time on scheduling and payment.</p>
 
                     <br>
 
@@ -243,28 +151,52 @@
 
               </div> <!-- /.row -->
 
-            </div> <!-- /.item -->
+            </div> <!-- slide1 end -->
 
-            <div class="item">
+            <div id="slide2" class="item">
 
               <div class="row">
                 
-                <div class="col-md-6 masthead-text animated fadeInUpBig">
-                  <h1 class="masthead-title">Don't feel limited to color schemes provided.</h1>
+                <div class="col-md-6 masthead-text animated fadeInLeftBig">
+                  <h1 class="masthead-title">Real Time Messaging!</h1>
 
                   <p class="masthead-">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi ut aliquip ex ea commodo consequat.
+                  Our In-App Messenger allows you to communicate with your customers 24/7.
                   </p>
 
                   <br>
 
                   <div class="masthead-actions">
-                    <a href="./page-features.html" class="btn btn-transparent btn-jumbo">
-                    Learn More
-                    </a>
-
                     <a href="../admin/account-signup.html" class="btn btn-primary btn-jumbo">
-                    Create an Account
+                    Start Your Free Trial
+                    </a>
+                  </div> <!-- /.masthead-actions -->
+                </div> <!-- /.masthead-text -->
+                
+                <div class="col-md-6 masthead-img animated fadeInUpBig">
+                  <img src="img/masthead/mobile.png" alt="slide2" class="img-responsive" />     
+                </div> <!-- /.masthead-img -->
+
+              </div> <!-- /.row -->
+
+            </div> <!-- /.item -->
+
+            <div id="slide3" class="item">
+
+              <div class="row">
+                
+                <div class="col-md-6 masthead-text animated fadeInUpBig">
+                  <h1 class="masthead-title">Instant (re)Scheduling!</h1>
+
+                  <p class="masthead-">
+                  See all your appointments at a glance.  Manage, schedule and re-schedule with ease.
+                  </p>
+
+                  <br>
+
+                  <div class="masthead-actions">
+                    <a href="../admin/account-signup.html" class="btn btn-primary btn-jumbo">
+                    Start Your Free Trial
                     </a>
                   </div> <!-- /.masthead-actions -->
                 </div> <!-- /.masthead-text -->
@@ -277,26 +209,23 @@
 
             </div> <!-- /.item -->
 
-            <div class="item">
+            <div id="slide4" class="item">
 
               <div class="row">
 
                 <div class="col-md-6 masthead-text animated fadeInDownBig">
-                  <h1 class="masthead-title">Don't feel limited to color schemes provided.</h1>
+                  <h1 class="masthead-title">Get paid on time.</h1>
 
                   <p class="masthead-">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi ut aliquip ex ea commodo consequat.
+                  Easy invoicing, online payment and reporting for tax time.
                   </p>
 
                   <br>
 
                   <div class="masthead-actions">
-                    <a href="./page-features.html" class="btn btn-transparent btn-jumbo">
-                    Learn More
-                    </a>
 
                     <a href="../admin/account-signup.html" class="btn btn-primary btn-jumbo">
-                    Create an Account
+                    Start Your Free Trial
                     </a>
                   </div> <!-- /.masthead-actions -->
                 </div> <!-- /.masthead-text -->
