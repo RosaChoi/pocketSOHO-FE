@@ -1,0 +1,25 @@
+
+/* Setting Color Palette*/
+
+$mainColor1: #8CC640;
+$mainColor2: #F48A1F;
+$mainColor3: #1B2846;
+$darkGray: #444444;
+$ligthGray: #CCCCCC;
+
+/* BODY*/
+/* ----------------------------------------------- */
+@mixin body {
+	font-family: "Open-Sans", sans-serif;
+    	-webkit-font-smoothing: antialiased;
+    	font-size: 16px;
+    	color: #444444;
+    	background-color: #FFFFFF;
+}
+
+/* NAV-BAR*/
+/* ----------------------------------------------- */
+#logo {
+	width: 90%;
+	padding-top: 17px;
+}
