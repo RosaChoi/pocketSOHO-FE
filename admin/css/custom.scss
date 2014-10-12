@@ -37,7 +37,6 @@ $ligthGray: #CCCCCC;
 	line-height: 1.5;
 	background-color: $mainColor1;
 	border: 1px solid $mainColor1;
-	border-radius: 0;
 	text-shadow: none;
 	box-shadow: none;
 }
@@ -64,3 +63,91 @@ $ligthGray: #CCCCCC;
 .navbar {
 	@include boxShadow;
 }
+
+.navbar-inverse {
+	position: fixed;
+ 	z-index: 5;
+ 	width: 100%;
+ 	background-color: rgba(255,255,255,0.9);
+ 	border-bottom: none;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: $mainColor1;
+	text-shadow: none;
+}
+
+.account-wrapper {
+	padding-top: 80px;
+}
+
+/* Account SignUp*/
+/* ----------------------------------------------- */
+#account-signup {
+	background: url(../img/photos/pianoteacher.jpg) center top no-repeat;
+	@include bgimg;
+}
+.account-body {
+  background-color: rgba(255,255,255,0.2);
+  border: 1px solid $ligthGray;
+}
+.account-body h3 {
+	color: #FFFFFF;
+	font-size: 2em;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4)
+}
+
+.account-body h5 {
+	color: $mainColor3;
+}
+
+.account-footer p {
+	color: #FFFFFF;
+	font-size: 16px;
+}
+.account-footer p a {
+	color: $mainColor2;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+	font-size: 16px;
+}
+
+.btn-secondary {
+	@include signupButton;
+}
+.btn-secondary {
+	background-color: $mainColor1;
+	border: 2px solid $mainColor1;
+	color: #FFFFFF;
+}
+.btn-secondary:hover {
+	background-color: transparent;
+	border: 2px solid $mainColor2;
+	color: $mainColor2;
+}
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, textarea:focus {
+	background-color: rgba(255,255,255,0.6);
+	box-shadow: 0 0 5px rgba(140, 198, 64, 0.8);
+	padding: 3px 0px 3px 3px;
+	margin: 5px 1px 3px 0px;
+	border: 1px solid rgba(140, 1398, 64, 0.8);
+}
+.checkbox-inline input[type=submit]:focus,
+.form-group button[type=submit]:focus {
+	outline: none;
+}
+
+.checkbox-inline {
+	color: $mainColor3;
+}
+.checkbox-inline a {
+	color: $mainColor1;
+}
+
+#back-to-top {
+	background-color: rgba(140, 198, 64, 0.6);
+}
+
+#back-to-top:hover {
+	background-color: $mainColor1;
+}
+
