@@ -87,9 +87,23 @@ $ligthGray: #CCCCCC;
 	background: url(../img/photos/pianoteacher.jpg) center top no-repeat;
 	@include bgimg;
 }
+
 #account-login {
 	background: url(../img/photos/working.jpg) center top no-repeat;
 	@include bgimg;
+}
+
+#reset-password {
+	background: url(../img/photos/personaltrainer.jpg) center top no-repeat;
+	@include bgimg;
+}
+#social-login {
+	background: url(../img/photos/makeup-artist.jpg) center top no-repeat;
+	@include bgimg;
+}
+
+.account-or-social {
+	color: $darkGray;
 }
 .account-body {
   background-color: rgba(255,255,255,0.2);
@@ -97,13 +111,22 @@ $ligthGray: #CCCCCC;
 }
 .account-body h3 {
 	color: #FFFFFF;
-	font-size: 2em;
 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4)
 }
 #account-login .account-body h5 {
 	color: $mainColor2;
 }
 
+#reset-password .account-body {
+	top: 13em;
+}
+#reset-password .account-body h2 {
+	color: #FFFFFF;
+}
+#reset-password .form-group a {
+	color: $mainColor3;
+	font-size: 14px;
+}
 .account-body h5 {
 	color: $mainColor3;
 }
@@ -158,6 +181,9 @@ input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, tex
 	color: $mainColor3;
 }
 .checkbox-inline a {
+	color: $mainColor3;
+}
+.checkbox-inline a:hover {
 	color: $mainColor1;
 }
 
@@ -176,4 +202,40 @@ input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, tex
 .pull-right small a {
 	color: $mainColor1;
 	font-size: 13px;
+}
+
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle.is-open {
+	background-color: $mainColor1;
+}
+
+
+@media (max-width: 480px) {
+	.navbar-header a {
+		width: 250px;
+	}
+	#logo {
+		width: 50%;
+		padding-top: 20px;
+	}
+	.account-body h3 {
+		font-size: 20px;
+	}
+	.account-footer p,
+	.account-footer p a {
+		font-size: 12px;
+		text-align: left;
+		width: 300px;
+	}
+	.checkbox-inline a {
+		font-size: 12px;
+	}
+	.btn-primary, 
+	.btn-secondary {
+		padding: 0.3em 2em;
+	}
+	#account-login .account-footer p {
+		color: $ligthGray;
+	}
+
 }
