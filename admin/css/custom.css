@@ -40,6 +40,13 @@
   -moz-background-size: cover;
   -o-background-size: cover; }
 
+#account-login {
+  background: url(../img/photos/working.jpg) center top no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; }
+
 .account-body {
   background-color: rgba(255, 255, 255, 0.2);
   border: 1px solid #CCCCCC; }
@@ -49,8 +56,17 @@
   font-size: 2em;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); }
 
+#account-login .account-body h5 {
+  color: #F48A1F; }
+
 .account-body h5 {
   color: #1B2846; }
+
+#account-login .account-footer p {
+  color: #1B2846; }
+
+#account-login .account-footer p a {
+  color: #8CC640; }
 
 .account-footer p {
   color: #FFFFFF;
@@ -61,6 +77,7 @@
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
   font-size: 16px; }
 
+.btn-primary,
 .btn-secondary {
   padding: 0.6em 2em;
   font-size: 20px;
@@ -70,15 +87,16 @@
   text-shadow: none;
   box-shadow: none; }
 
-.btn-secondary {
+.btn-secondary,
+.btn-primary {
   background-color: #8CC640;
-  border: 2px solid #8CC640;
+  border: 1px solid #FFFFFF;
   color: #FFFFFF; }
 
-.btn-secondary:hover {
-  background-color: transparent;
-  border: 2px solid #F48A1F;
-  color: #F48A1F; }
+.btn-secondary:hover,
+.btn-primary:hover {
+  background-color: #F48A1F;
+  border: 1px solid #FFFFFF; }
 
 input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, textarea:focus {
   background-color: rgba(255, 255, 255, 0.6);
@@ -102,5 +120,13 @@ input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, tex
 
 #back-to-top:hover {
   background-color: #8CC640; }
+
+.pull-left small {
+  color: #FFFFFF;
+  font-size: 13px; }
+
+.pull-right small a {
+  color: #8CC640;
+  font-size: 13px; }
 
 /*# sourceMappingURL=custom.css.map */
