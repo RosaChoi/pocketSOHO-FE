@@ -170,13 +170,13 @@ a {
 	background-color: $mainColor2;
 	border: 1px solid #FFFFFF;
 }
-input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, textarea:focus {
+/*input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, textarea:focus {
 	background-color: rgba(255,255,255,0.6);
 	box-shadow: 0 0 5px rgba(140, 198, 64, 0.8);
 	padding: 3px 0px 3px 3px;
 	margin: 5px 1px 3px 0px;
 	border: 1px solid rgba(140, 198, 64, 0.8);
-}
+}*/
 .checkbox-inline input[type=submit]:focus,
 .form-group button[type=submit]:focus {
 	outline: none;
@@ -262,6 +262,87 @@ input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, tex
 	color: #FFFFFF;
 }
 
+
+/* Admin - Index - Main Dashboard*/
+/* ----------------------------------------------- */
+
+.fa-home {
+  font-size: 1.2em;
+}
+.nav li a.hello {
+  font-size: 1.3em;
+}
+.message-content,
+.newmessage-content {
+  padding-top: 10em;
+}
+.message-content h3 u {
+  font-size: 1.5em;
+  @include mainFont;
+  font-weight: 700;
+}
+.thumbnail {
+	width: 80px;
+	height: 80px;
+	margin: auto;
+}
+.sender {
+	padding: 3px 0;
+	text-align: center;
+}
+td {
+	height: 110px;
+}
+.message-action .btn-primary,
+.message-action .btn-secondary{
+	padding: 0.3em 1em;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active,
+.btn-secondary.active {
+	background-color: $mainColor2;
+	border-color: $mainColor2;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active {
+	background-color: darken($mainColor1, 10%);
+	border-color: darken($mainColor1, 10%);
+}
+#chaticon {
+	width: 100px;
+	padding-right: 1em;
+}
+.content-title {
+	border-bottom: 0;
+}
+a.pull-left {
+	padding: 0.4em 2em;
+	border: 1px solid $mainColor1;
+}
+.new-chat {
+	font-size: 18px;
+	font-weight: 700;
+	padding: 1.2em;
+}
+.new-chat a {
+	color: $mainColor1;
+}
+.new-chat a:hover {
+	background-color: lighten($mainColor1, 30%);
+	color: darken($mainColor1, 20%);
+}
+.send-button {
+	padding: 0.3em 6em;
+	font-size: 16px;
+	background-color: $mainColor2;
+	/*border: 1px solid $mainColor2;*/
+	color: #FFFFFF;
+	text-shadow: 0 0 0;
+}
 
 
 
