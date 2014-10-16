@@ -241,7 +241,8 @@ a {
   font-size: 1.3em; }
 
 .message-content,
-.newmessage-content {
+.newmessage-content,
+.profile-content {
   padding-top: 10em; }
 
 .message-content h3 u {
@@ -287,9 +288,10 @@ td {
 .content-title {
   border-bottom: 0; }
 
-a.pull-left {
+a.new-ms {
   padding: 0.4em 2em;
-  border: 1px solid #8CC640; }
+  border: 1px solid #8CC640;
+  background-color: #8CC640; }
 
 .new-chat {
   font-size: 18px;
@@ -297,7 +299,7 @@ a.pull-left {
   padding: 1.2em; }
 
 .new-chat a {
-  color: #8CC640; }
+  color: #FFFFFF; }
 
 .new-chat a:hover {
   background-color: #d3e9b6;
@@ -311,6 +313,14 @@ a.pull-left {
   color: #FFFFFF;
   text-shadow: 0 0 0; }
 
+@media (max-width: 767px) {
+  .mainnav-form {
+    border-top: 0;
+    border-bottom: 0; }
+
+  #logo {
+    width: 50%;
+    padding-top: 20px; } }
 @media (max-width: 480px) {
   .navbar-header a {
     width: 250px; }
