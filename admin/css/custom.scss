@@ -41,6 +41,11 @@ $ligthGray: #CCCCCC;
 	box-shadow: none;
 }
 
+/* Mobile Menu*/
+@mixin mobileMenuClose {
+	display: none;
+} 
+
 
 
 /* BODY*/
@@ -67,7 +72,7 @@ a {
 }
 .navbar-inverse {
 	position: fixed;
- 	z-index: 5;
+ 	z-index: 100 !important;
  	width: 100%;
  	background-color: rgba(255,255,255,0.9);
  	border-bottom: none;
@@ -82,6 +87,10 @@ a {
 .navbar-inverse .navbar-nav > li > a:hover {
 	background-color: transparent;
 	color: darken($mainColor1, 20%);
+}
+.navbar-collapse.in {
+	background-color: $mainColor3;
+
 }
 /*.navbar-inverse .navbar-nav > li.active > a,
 .navbar-inverse .navbar-nav > li.active > a:hover,
@@ -274,7 +283,10 @@ a {
 }
 .message-content,
 .newmessage-content,
-.profile-content {
+.profile-content,
+.setting-content,
+.pricing-content,
+.dashboard-content {
   padding-top: 10em;
 }
 .message-content h3 u {
@@ -296,7 +308,7 @@ td {
 }
 .message-action .btn-primary,
 .message-action .btn-secondary{
-	padding: 0.3em 1em;
+	padding: 0.15em 0.55em;
 }
 
 .btn-secondary:hover,
@@ -345,8 +357,68 @@ a.new-ms {
 	color: #FFFFFF;
 	text-shadow: 0 0 0;
 }
+.valign-middle {
+	padding-left: 5px;
+}
+#newbiz-btn,
+#newcustomer-btn {
+	font-size: 16px;
+	padding: 0.3em 1em;
+}
+
+/* Admin - User Setting Page - Main Dashboard*/
+/* ----------------------------------------------- */
+.nav-layout-sidebar > .active > a {
+	color: $mainColor2;
+}
+.nav-layout-sidebar > .active > a:hover {
+	color: $mainColor1;
+}
+#sidebar-menu {
+	z-index: 1;
+}
+#save-change,
+#save-change1,
+#save-change2 {
+	padding: 0.4em 1.4em;
+}
+#cancel-change,
+#cancel-change1,
+#cancel-change2 {
+	padding: 0.9em 4.4em;
+}
+.pricing-plan-amount {
+	color: $mainColor1;
+}
+.btn-primary.disabled {
+	background-color: $mainColor2;
+	border-color: $mainColor2;
+}
+.pricing-plan-ribbon-secondary {
+	background-color: $mainColor2;
+}
+.pricing-header {
+	background-color: $mainColor3;
+}
+
+
 
 @media (max-width: 767px) {
+	#logo2,
+	#logo3 {
+		width: 40px;
+	}
+	#logo3 {
+		display: none;
+	}
+	.navbar-inverse .navbar-toggle:hover {
+		background-color: rgba(255,255,255,0.9);
+	}
+
+	.navbar-inverse .navbar-toggle.is-open {
+		background-color: rgba(255,255,255,0.9);
+
+	}
 	.mainnav-form {
 		border-top: 0;
 		border-bottom: 0;
@@ -355,13 +427,22 @@ a.new-ms {
 		width: 50%;
 		padding-top: 20px;
 	}
-
+	.navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover {
+		cursor: pointer;
+		color: lighten($mainColor2, 10%);
+	}
+	.avatar-img {
+		width: 60px !important;
+	}
+	.table-responsive>.table>thead>tr>th {
+		white-space: normal;
+	}
 }
 
 
 @media (max-width: 480px) {
 	.navbar-header a {
-		width: 250px;
+		width: 230px;
 	}
 	#logo {
 		width: 50%;
