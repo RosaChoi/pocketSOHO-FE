@@ -86,9 +86,12 @@ a {
 .account-or-social {
   color: #444444; }
 
+.account-wrapper {
+  padding-bottom: 0; }
+
 .account-body {
   background-color: rgba(255, 255, 255, 0.2);
-  border: 1px solid #CCCCCC; }
+  border: 0; }
 
 .account-body h3 {
   color: #FFFFFF;
@@ -249,10 +252,12 @@ a {
 .profile-content,
 .setting-content,
 .pricing-content,
-.dashboard-content {
+.dashboard-content,
+.appt-content {
   padding-top: 10em; }
 
-.message-content h3 u {
+.message-content h3 u,
+.appt-content h3 u {
   font-size: 1.5em;
   font-family: "Open-Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -288,7 +293,8 @@ td {
   background-color: #71a330;
   border-color: #71a330; }
 
-#chaticon {
+#chaticon,
+#appticon {
   width: 100px;
   padding-right: 1em; }
 
@@ -327,6 +333,9 @@ a.new-ms {
 #newcustomer-btn {
   font-size: 16px;
   padding: 0.3em 1em; }
+
+.appt-content .portlet-title u, .content-title u {
+  border-bottom: 1px solid #F48A1F; }
 
 /* Admin - User Setting Page - Main Dashboard*/
 /* ----------------------------------------------- */

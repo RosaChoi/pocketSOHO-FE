@@ -125,9 +125,12 @@ a {
 .account-or-social {
 	color: $darkGray;
 }
+.account-wrapper {
+	padding-bottom: 0;
+}
 .account-body {
   background-color: rgba(255,255,255,0.2);
-  border: 1px solid $ligthGray;
+  border: 0;
 }
 .account-body h3 {
 	color: #FFFFFF;
@@ -286,10 +289,12 @@ a {
 .profile-content,
 .setting-content,
 .pricing-content,
-.dashboard-content {
+.dashboard-content,
+.appt-content {
   padding-top: 10em;
 }
-.message-content h3 u {
+.message-content h3 u,
+.appt-content h3 u {
   font-size: 1.5em;
   @include mainFont;
   font-weight: 700;
@@ -325,7 +330,8 @@ td {
 	background-color: darken($mainColor1, 10%);
 	border-color: darken($mainColor1, 10%);
 }
-#chaticon {
+#chaticon,
+#appticon {
 	width: 100px;
 	padding-right: 1em;
 }
@@ -365,7 +371,9 @@ a.new-ms {
 	font-size: 16px;
 	padding: 0.3em 1em;
 }
-
+.appt-content .portlet-title u, .content-title u {
+	border-bottom: 1px solid $mainColor2;
+}
 /* Admin - User Setting Page - Main Dashboard*/
 /* ----------------------------------------------- */
 .nav-layout-sidebar > .active > a {
