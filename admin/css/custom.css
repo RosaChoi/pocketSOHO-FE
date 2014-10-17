@@ -334,9 +334,6 @@ a.new-ms {
   font-size: 16px;
   padding: 0.3em 1em; }
 
-.appt-content .portlet-title u, .content-title u {
-  border-bottom: 1px solid #F48A1F; }
-
 /* Admin - User Setting Page - Main Dashboard*/
 /* ----------------------------------------------- */
 .nav-layout-sidebar > .active > a {
@@ -370,6 +367,9 @@ a.new-ms {
 
 .pricing-header {
   background-color: #1B2846; }
+
+.brief-instr {
+  font-size: 12px; }
 
 @media (max-width: 767px) {
   #logo2,
