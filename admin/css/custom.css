@@ -342,8 +342,41 @@ a.new-ms {
 .page-right {
   padding-right: 10px; }
 
-.pagination > li > a:hover {
+.pagination > li > a:hover,
+.pagination > li > a:active {
   background-color: #8CC640; }
+
+/* Appointments Page*/
+/* ----------------------------------------------- */
+.appt-title {
+  padding-top: 1.2em; }
+
+.appt-title u {
+  border-bottom: 1px solid #F48A1F; }
+
+.alert-success {
+  background-color: #7fb636;
+  border: 1px solid #7fb636;
+  font-size: 15px; }
+
+.appt-tomorrow {
+  background-color: #b3b3b3;
+  border: 1px solid #b3b3b3; }
+
+a.appt-biz,
+a.appt-edit {
+  color: #FFFFFF;
+  padding-left: 10px; }
+
+a.appt-biz:hover,
+a.appt-edit:hover {
+  color: #1B2846; }
+
+.fa-calendar-o {
+  padding-right: 5px; }
+
+.fa-usd {
+  padding-left: 10px; }
 
 /* Error Page*/
 /* ----------------------------------------------- */
@@ -444,9 +477,6 @@ a.new-ms {
   .avatar-img {
     width: 60px !important; }
 
-  /*.table-responsive>.table>thead>tr>td {
-  	white-space: normal;
-  }*/
   .table-responsive > .table > thead > tr > th,
   .table-responsive > .table > tbody > tr > th,
   .table-responsive > .table > tfoot > tr > th,

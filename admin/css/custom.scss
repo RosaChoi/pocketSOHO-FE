@@ -379,8 +379,42 @@ a.new-ms {
 .page-right {
 	padding-right: 10px;
 }
-.pagination > li > a:hover {
+.pagination > li > a:hover,
+.pagination > li > a:active {
 	background-color: $mainColor1;
+}
+
+/* Appointments Page*/
+/* ----------------------------------------------- */
+.appt-title {
+	padding-top: 1.2em;
+}
+.appt-title u {
+	border-bottom: 1px solid $mainColor2;
+}
+.alert-success {
+	background-color: darken($mainColor1, 5%);
+	border: 1px solid darken($mainColor1, 5%);
+	font-size: 15px;
+}
+.appt-tomorrow {
+	background-color: darken($ligthGray, 10%);
+	border: 1px solid darken($ligthGray, 10%);
+}
+a.appt-biz,
+a.appt-edit {
+	color: #FFFFFF;
+	padding-left: 10px;
+}
+a.appt-biz:hover,
+a.appt-edit:hover {
+	color: $mainColor3;
+}
+.fa-calendar-o {
+	padding-right: 5px;
+}
+.fa-usd {
+	padding-left: 10px;
 }
 
 
@@ -485,9 +519,6 @@ a.new-ms {
 	.avatar-img {
 		width: 60px !important;
 	}
-	/*.table-responsive>.table>thead>tr>td {
-		white-space: normal;
-	}*/
 	.table-responsive>.table>thead>tr>th,
 	 .table-responsive>.table>tbody>tr>th, 
 	 .table-responsive>.table>tfoot>tr>th, 
