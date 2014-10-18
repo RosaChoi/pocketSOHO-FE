@@ -215,7 +215,8 @@ a {
   color: #8CC640; }
 
 .footer {
-  background-color: #1B2846; }
+  background-color: #1B2846;
+  border-top: 0; }
 
 .mainnav-collapse input[type=text]:focus {
   background-color: #FFFFFF;
@@ -253,7 +254,8 @@ a {
 .setting-content,
 .pricing-content,
 .dashboard-content,
-.appt-content {
+.appt-content,
+.error-content {
   padding-top: 10em; }
 
 .message-content h3 u,
@@ -334,6 +336,48 @@ a.new-ms {
   font-size: 16px;
   padding: 0.3em 1em; }
 
+.pagination {
+  list-style: none; }
+
+.page-right {
+  padding-right: 10px; }
+
+.pagination > li > a:hover {
+  background-color: #8CC640; }
+
+/* Error Page*/
+/* ----------------------------------------------- */
+.error-page {
+  background: url(../img/photos/berries.jpg) center top no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; }
+
+.error-details {
+  padding-top: 20px; }
+
+.error-code {
+  font-size: 60px;
+  color: #1B2846;
+  line-height: 1.2;
+  font-weight: 700;
+  font-family: "Open-Sans", sans-serif;
+  -webkit-font-smoothing: antialiased; }
+
+.error-message {
+  font-size: 1.2em; }
+
+.pocketsoho-home {
+  color: #567b25; }
+
+.pocketsoho-home:hover {
+  color: #f9bd80; }
+
+.oops {
+  color: #F48A1F;
+  font-size: 2.2em; }
+
 /* Admin - User Setting Page - Main Dashboard*/
 /* ----------------------------------------------- */
 .nav-layout-sidebar > .active > a {
@@ -400,7 +444,15 @@ a.new-ms {
   .avatar-img {
     width: 60px !important; }
 
-  .table-responsive > .table > thead > tr > th {
+  /*.table-responsive>.table>thead>tr>td {
+  	white-space: normal;
+  }*/
+  .table-responsive > .table > thead > tr > th,
+  .table-responsive > .table > tbody > tr > th,
+  .table-responsive > .table > tfoot > tr > th,
+  .table-responsive > .table > thead > tr > td,
+  .table-responsive > .table > tbody > tr > td,
+  .table-responsive > .table > tfoot > tr > td {
     white-space: normal; } }
 @media (max-width: 480px) {
   .navbar-header a {
