@@ -187,6 +187,10 @@ a {
 .navbar-inverse .navbar-toggle.is-open {
   background-color: #8CC640; }
 
+.btn-twitter {
+  background-color: #1e87bd;
+  border: 1px solid #176891; }
+
 /* Form Validation*/
 /* ----------------------------------------------- */
 .mainnav {
