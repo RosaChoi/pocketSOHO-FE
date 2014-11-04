@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+  <title>pocketSOHO &middot; Edit Business</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="description" content="PocketSOHO: My Dashboard - Edit Business">
+
+  <!-- Google Font: Open Sans -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,300,700">
+
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+  <!-- Plugin CSS -->
+  <link rel="stylesheet" href="./js/plugins/fileupload/bootstrap-fileupload.css">
+
+  <!-- App CSS -->
+  <link rel="stylesheet" href="./css/mvpready-admin.css">
+  <link rel="stylesheet" href="./css/mvpready-flat.css">
+   <link href="./css/custom.css" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./img/ico/favicon.png">
+  <link rel="shortcut icon" href="./img/ico/favicon32x32.png">
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body class=" ">
+
+<div id="wrapper">
+
+  <header class="navbar navbar-inverse" role="banner">
+
+      <div class="container">
+
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <img id="logo2" src="./img/mobilemenu-logo.svg" alt="pocketSOHO">
+            <img id="logo3" src="./img/mobilemenu-logo1.svg" alt="pocketSOHO">
+            </button>
+            <a href="http://www.pocketsoho.com" class="navbar-brand navbar-brand-img">
+            <img id="logo" src="./img/logo.svg" alt="pocketSOHO">
+            </a>
+      </div> <!-- /.navbar-header -->
+
+      <nav class="collapse navbar-collapse" role="navigation">
+
+           <ul class="nav navbar-nav noticebar navbar-left">
+
+          <li class="dropdown">
+            <a href="./index.html">
+              <i class="fa fa-home ui-tooltip" data-toggle="tooltip" data-placement="bottom" title="home"></i>
+            </a>
+          </li>
+
+          <li class="dropdown">
+            <a href="./page-messages.html">
+              <i class="fa fa-envelope ui-tooltip" data-toggle="tooltip" data-placement="bottom" title="my messages"></i>
+            </a>
+          </li>
+
+          <li class="dropdown">
+            <a href="./page-appointments.html">
+              <i class="fa fa-calendar ui-tooltip" data-toggle="tooltip" data-placement="bottom" title="my appointments"></i>
+            </a>
+          </li>
+
+           <li class="dropdown">
+            <a href="./page-notifications.html">
+              <i class="fa fa-dollar ui-tooltip" data-toggle="tooltip" data-placement="bottom" title="my payments"></i>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+
+            <li>
+                <a class="hello" href="#">Hello, Janet</a>
+            </li>
+
+            <li class="dropdown navbar-profile">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;">
+                  <img src="./img/avatars/avatar-3-xs.jpg" class="navbar-profile-avatar" alt="">
+                    <span class="navbar-profile-label">janet@janet.me &nbsp;</span>
+                    <i class="fa fa-caret-down"></i>
+                </a>
+
+                <ul class="dropdown-menu" role="menu">
+
+                  <li>
+                      <a href="./page-profile.html">
+                      <i class="fa fa-user"></i>
+                       &nbsp;&nbsp;My Profile
+                      </a>
+                  </li>
+                <!--   <li>
+                      <a href="./page-pricing.html">
+                      <i class="fa fa-dollar"></i>
+                       &nbsp;&nbsp;Plans & Billing
+                      </a>
+                  </li> -->
+                  <li>
+                     <a href="./page-settings.html">
+                     <i class="fa fa-cogs"></i>
+                      &nbsp;&nbsp;Settings
+                    </a>
+                  </li>
+                  <li class="divider"></li>
+                  <li>
+                      <a href="./account-login.html">
+                      <i class="fa fa-sign-out"></i>
+                        &nbsp;&nbsp;Logout
+                      </a>
+                  </li>
+                </ul>
+            </li>
+        </ul>
+      </nav>
+
+    </div> <!-- /.container -->
+
+  </header>
+
+  <div class="setting-content content">
+
+    <div class="container">
+
+      <div class="layout layout-main-right layout-stack-sm">
+
+        <div class="col-md-9 col-sm-8 layout-main">
+
+          <div id="settings-content" class="tab-content stacked-content">
+
+            <div class="tab-pane fade in active" id="profile-tab">
+
+              <h3 class="content-title"><u>Edit Business</u></h3>
+
+              <br><br>
+
+              <form action="./page-settings.html" class="form-horizontal">
+
+                <div class="form-group">
+
+                  <label class="col-md-3">Name</label>
+
+                  <div class="col-md-7">
+                    <input type="text" name="name" value="Sample Business" class="form-control" />
+                  </div> <!-- /.col -->
+
+                </div> <!-- /.form-group -->
+
+
+
+                <div class="form-group">
+
+                  <label class="col-md-3">Image URL</label>
+
+                  <div class="col-md-7">
+                    <input type="text" name="city" value="http://wiki.tripwireinteractive.com/images/4/47/Placeholder.png" class="form-control" />
+                  </div> <!-- /.col -->
+
+                </div> <!-- /.form-group -->
+
+
+
+                <div class="form-group">
+
+                  <label class="col-md-3">Slogan</label>
+
+                  <div class="col-md-7">
+                    <input type="text" name="slogan" value="" class="form-control" />
+                  </div> <!-- /.col -->
+
+                </div> <!-- /.form-group -->
+
+                <div class="form-group">
+
+                  <label class="col-md-3">City</label>
+
+                  <div class="col-md-7">
+                    <input type="text" name="city" value="San Francisco" class="form-control" />
+                  </div> <!-- /.col -->
+
+                </div> <!-- /.form-group -->
+
+                <div class="form-group">
+
+                  <label class="col-md-3">State</label>
+
+                  <div class="col-md-7">
+                    <input type="text" name="state" value="CA" class="form-control" />
+                  </div> <!-- /.col -->
+
+                </div> <!-- /.form-group -->
+
+                <div class="form-group">
+
+                  <label class="col-md-3">Description</label>
+
+                  <div class="col-md-7">
+                    <textarea id="about-textarea" name="about" rows="6" class="form-control">Lorem ipsum dolor sit amet, odio ignota cetero id vim, mea modo vide fabulas ad. His id animal aliquando, et cibo utamur vim. Id etiam dissentias sed, has prompta delicatissimi cu. Id mei probo novum harum, per falli utinam labores ut. Ei sed reque harum.</textarea>
+                  </div> <!-- /.col -->
+
+                </div> <!-- /.form-group -->
+
+
+
+                <div class="form-group">
+                  <div class="editbiz col-md-7 col-md-push-3">
+                    <button id="save-change" type="submit" class="btn btn-primary">Update Business</button>
+                    &nbsp;
+                    <button id="cancel-change" type="reset" class="btn btn-default">Delete Business</button>
+                  </div> <!-- /.col -->
+                </div> <!-- /.form-group -->
+
+              </form>
+
+
+            </div> <!-- /.tab-pane -->
+
+          </div> <!-- /.tab-content -->
+
+        </div> <!-- /.col -->
+
+      </div> <!-- /.row -->
+
+
+    </div> <!-- /.container -->
+
+  </div> <!-- .content -->
+
+</div> <!-- /#wrapper -->
+
+<footer class="footer">
+  <div class="container">
+    <p class="copyright pull-left">Copyright &copy; 2014 pocketSOHO.</p>
+  </div>
+</footer>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Core JS -->
+<script src="./js/libs/jquery-1.10.2.min.js"></script>
+<script src="./js/libs/bootstrap.min.js"></script>
+
+<!--[if lt IE 9]>
+<script src="./js/libs/excanvas.compiled.js"></script>
+<![endif]-->
+
+<!-- Plugin JS -->
+<script src="./js/plugins/fileupload/bootstrap-fileupload.js"></script>
+
+<!-- App JS -->
+<script src="./js/mvpready-core.js"></script>
+<script src="./js/mvpready-admin.js"></script>
+
+</body>
+</html>
