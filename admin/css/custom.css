@@ -482,6 +482,9 @@ a.appt-edit:hover {
 .editbiz #cancel-change {
   padding: 0.6em 4em; }
 
+.bizprofile.profile-avatar-img {
+  margin-left: 0; }
+
 @media (max-width: 767px) {
   #logo2,
   #logo3 {
