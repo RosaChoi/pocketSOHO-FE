@@ -44,7 +44,7 @@ $ligthGray: #CCCCCC;
 /* Mobile Menu*/
 @mixin mobileMenuClose {
 	display: none;
-} 
+}
 
 
 
@@ -491,6 +491,21 @@ a.appt-edit:hover {
 .brief-instr {
 	font-size: 12px;
 }
+.recipient:hover {
+	color: $mainColor2;
+}
+.message-box {
+	padding: 1.5em 0;
+	background-color: #EEEEEE;
+	margin-bottom: 1.5em;
+}
+.message-box ul {
+	list-style: none;
+	font-size: 16px;
+	line-height: 1.5;
+	padding-right: 10px;
+}
+
 
 
 @media (max-width: 767px) {
@@ -525,10 +540,10 @@ a.appt-edit:hover {
 		width: 60px !important;
 	}
 	.table-responsive>.table>thead>tr>th,
-	 .table-responsive>.table>tbody>tr>th, 
-	 .table-responsive>.table>tfoot>tr>th, 
-	 .table-responsive>.table>thead>tr>td, 
-	 .table-responsive>.table>tbody>tr>td, 
+	 .table-responsive>.table>tbody>tr>th,
+	 .table-responsive>.table>tfoot>tr>th,
+	 .table-responsive>.table>thead>tr>td,
+	 .table-responsive>.table>tbody>tr>td,
 	 .table-responsive>.table>tfoot>tr>td {
 	 	white-space: normal;
 	 }
@@ -553,7 +568,7 @@ a.appt-edit:hover {
 	.checkbox-inline a {
 		font-size: 12px;
 	}
-	.btn-primary, 
+	.btn-primary,
 	.btn-secondary {
 		padding: 0.3em 2em;
 	}
@@ -563,7 +578,7 @@ a.appt-edit:hover {
 	#account-signup {
 		background: url(../img/photos/mobile-piano.jpg) center top no-repeat;
 		@include bgimg;
-	}	
+	}
 
 	#account-login {
 		background: url(../img/photos/mobile-working.jpg) center top no-repeat;

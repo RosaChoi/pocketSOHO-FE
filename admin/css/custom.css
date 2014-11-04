@@ -452,6 +452,20 @@ a.appt-edit:hover {
 .brief-instr {
   font-size: 12px; }
 
+.recipient:hover {
+  color: #F48A1F; }
+
+.message-box {
+  padding: 1.5em 0;
+  background-color: #EEEEEE;
+  margin-bottom: 1.5em; }
+
+.message-box ul {
+  list-style: none;
+  font-size: 16px;
+  line-height: 1.5;
+  padding-right: 10px; }
+
 @media (max-width: 767px) {
   #logo2,
   #logo3 {
