@@ -4,11 +4,11 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 <head>
-  <title>Conversations; pocketSOHO</title>
+  <title>New Appointment; pocketSOHO</title>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-  <meta name="description" content="PocketSOHO: Messages - Conversations">
+  <meta name="description" content="PocketSOHO: My Dashboard - Create a new appointment">
 
   <!-- Google Font: Open Sans -->
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic">
@@ -147,7 +147,7 @@
 
   </header>
 
-<div class="newmessage-content content">
+<div class="newappt-content content">
 
     <div class="container">
 
@@ -158,28 +158,104 @@
           <div class="portlet">
 
             <h2 class="portlet-title">
-              <u>Conversations with <a class="recipient" href="#">Rosa Choi</a></u>
+              <u>Create an Appointment</u>
             </h2>
 
             <div class="portlet-body">
+              <div class="form-group">
+               <label for="validateSelect">Recipient</label>
+               <select id="validateSelect" name="validateSelect" class="form-control parsley-validated" data-required="true">
+                 <option value="">Please Select</option>
+                 <option value="Rosa Choi">Rosa Choi</option>
+                 <option value="Sumi Levy">Sumi Levy</option>
+                 <option value="Ben Levy">pocketSOHO</option>
+                 <option value="Jane Doe">Jane Doe</option>
+                 <option value="John Smith">John Smith</option>
+               </select>
+             </div>
+              <div class="form-group">
+                <label class="bizlabel col-md-3">Business:</label>
+                <input type="text" name="business-name" value="" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="textarea-input">Note:</label>
+                <textarea data-required="true" data-minlength="5" name="textarea-input" id="textarea-input" cols="10" rows="5" class="form-control parsley-validated"></textarea>
+              </div> <!-- /.form-group -->
 
               <form id="demo-validation" action="./components-validation.html" data-validate="parsley" class="form parsley-form">
-                 <div class="message-box">
-                  <ul>
-                    <li>Rosa Choi</li>
-                    <li><a href="javascript:;" title=""><strong>Feb 12, 2012. 12:28</strong></a></li>
-                    <li><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p></li>
-                  </ul>
+                 <div class="form-group">
+                  <label for="validateSelect">Date</label>
+                  <select id="validateSelect" name="validateSelect" class="year form-control parsley-validated" data-required="true">
+                    <option value="">Year</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                  </select>
+                  <select id="validateSelect" name="validateSelect" class="month form-control parsley-validated" data-required="true">
+                    <option value="">Month</option>
+                    <option value="jan">January</option>
+                    <option value="feb">February</option>
+                    <option value="mar">March</option>
+                    <option value="apr">April</option>
+                    <option value="may">May</option>
+                    <option value="jun">June</option>
+                    <option value="jul">July</option>
+                    <option value="aug">August</option>
+                    <option value="sep">September</option>
+                    <option value="oct">October</option>
+                    <option value="nov">November</option>
+                    <option value="dec">December</option>
+                  </select>
+                  <select id="validateSelect" name="validateSelect" class="day form-control parsley-validated" data-required="true">
+                    <option value="">Day</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                </div> <!-- /.form-group -->
+
+                <div class="form-group">
+                 <label for="validateSelect">Time</label>
+                 <select id="validateSelect" name="validateSelect" class="year form-control parsley-validated" data-required="true">
+                   <option value="">Hour</option>
+                   <option value="1">0</option>
+                   <option value="2">1</option>
+                   <option value="3">2</option>
+                   <option value="4">3</option>
+                   <option value="5">4</option>
+                 </select>
+                 <select id="validateSelect" name="validateSelect" class="day form-control parsley-validated" data-required="true">
+                   <option value="">Minutes</option>
+                   <option value="1">00</option>
+                   <option value="2">01</option>
+                   <option value="3">02</option>
+                   <option value="4">03</option>
+                   <option value="5">04</option>
+                   <option value="6">05</option>
+                   <option value="7">06</option>
+                   <option value="8">07</option>
+                   <option value="9">08</option>
+                   <option value="10">09</option>
+                   <option value="10">10</option>
+                 </select>
+               </div>
+
+                <div class="form-group">
+                  <div>
+                    <button id="update-appt" type="submit" class="btn btn-primary">Create Appointment</button>
+                    &nbsp;
+                    <!-- <button id="delete-appt" type="reset" class="btn btn-default"> Appointment</button> -->
+                  </div> <!-- /.col -->
                 </div>
-
-                <div class="form-group">
-                  <label for="textarea-input">Reply to <a class="recipient" href="#">Rosa Choi</a></label>
-                  <textarea data-required="true" data-minlength="5" name="textarea-input" id="textarea-input" cols="10" rows="8" class="form-control parsley-validated"></textarea>
-                </div> <!-- /.form-group -->
-
-                <div class="form-group">
-                  <button type="submit" class="send-button btn btn-danger">SEND</button>
-                </div> <!-- /.form-group -->
 
               </form>
 
@@ -192,33 +268,6 @@
       </div> <!-- /.row -->
 
     </div> <!-- /.container -->
-    <div class="row">
-      <div class="pull-right page-right">
-        <ul class="pagination">
-          <li>
-              <a href="#">Previous</a>
-          </li>
-          <li>
-              <a href="#">1</a>
-          </li>
-          <li>
-              <a href="#">2</a>
-          </li>
-          <li>
-              <a href="#">3</a>
-          </li>
-          <li>
-              <a href="#">4</a>
-          </li>
-          <li>
-              <a href="#">5</a>
-          </li>
-          <li>
-              <a href="#">Next</a>
-          <li>
-        </ul>
-      </div>
-    </div>
 
 
 

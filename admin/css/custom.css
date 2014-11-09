@@ -149,13 +149,6 @@ a {
   background-color: #F48A1F;
   border: 1px solid #FFFFFF; }
 
-/*input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, textarea:focus {
-	background-color: rgba(255,255,255,0.6);
-	box-shadow: 0 0 5px rgba(140, 198, 64, 0.8);
-	padding: 3px 0px 3px 3px;
-	margin: 5px 1px 3px 0px;
-	border: 1px solid rgba(140, 198, 64, 0.8);
-}*/
 .checkbox-inline input[type=submit]:focus,
 .form-group button[type=submit]:focus {
   outline: none; }
@@ -259,7 +252,8 @@ a {
 .pricing-content,
 .dashboard-content,
 .appt-content,
-.error-content {
+.error-content,
+.newappt-content {
   padding-top: 10em; }
 
 .message-content h3 u,
@@ -349,6 +343,9 @@ a.new-ms {
 .pagination > li > a:hover,
 .pagination > li > a:active {
   background-color: #8CC640; }
+
+.dashboard-content .icons-list > li {
+  padding-left: 0; }
 
 /* Appointments Page*/
 /* ----------------------------------------------- */
@@ -460,6 +457,9 @@ a.appt-edit:hover {
   background-color: #EEEEEE;
   margin-bottom: 1.5em; }
 
+.message-box.owner {
+  background-color: #ebf5dd; }
+
 .message-box ul {
   list-style: none;
   font-size: 16px;
@@ -484,6 +484,130 @@ a.appt-edit:hover {
 
 .bizprofile.profile-avatar-img {
   margin-left: 0; }
+
+.icons-list .client-name a {
+  font-size: 16px; }
+
+.chat-btn.btn-secondary {
+  font-size: 16px; }
+
+#validateSelect.year,
+#validateSelect.month,
+#validateSelect.day {
+  width: 90px; }
+
+#demo-validation #validateSelect {
+  display: inline; }
+
+#update-appt,
+#delete-appt {
+  font-size: 15px;
+  padding: 6px 10px; }
+
+.portlet {
+  margin-bottom: 1.5em; }
+
+.dashboard-content .content-title.my-appt {
+  margin-top: 3em; }
+
+/* Admin - Feature 2: APPOINTMENTS*/
+/* ----------------------------------------------- */
+.appt-with a:hover {
+  color: #F48A1F;
+  text-decoration: none; }
+
+.appt-with .btn {
+  font-size: 16px;
+  padding: 0.7em 3em; }
+
+.appt-with .btn:hover {
+  color: #FFFFFF; }
+
+.appt-with ul {
+  padding-left: 0; }
+
+.appt-with ul li {
+  display: inline-block;
+  padding: 0 10px; }
+
+.appt-with .form-horizontal {
+  margin-top: 4em; }
+
+#sam-biz {
+  font-size: 1.2em; }
+
+.fa-envelope,
+.fa-clock-o,
+.fa-pencil-square {
+  padding-right: 10px; }
+
+.appt-form-group ul li {
+  font-size: 14px;
+  font-weight: 400; }
+
+.appt-form-group a,
+.appt-form-group span {
+  padding-left: 10px; }
+
+#customer-pic {
+  padding-left: 0; }
+
+.accordion-caret:before {
+  color: #F48A1F; }
+
+#appt-list li {
+  font-size: 16px;
+  padding: 10px 0;
+  border-bottom: 1px solid #EEEEEE; }
+
+#appt-list li a {
+  color: #444444; }
+
+#appt-list li a:hover {
+  color: #F48A1F; }
+
+#table-2 th {
+  background-color: #F48A1F;
+  color: #FFFFFF; }
+
+#table-3 th,
+#table-4 th {
+  background-color: #5e5e5e;
+  color: #FFFFFF; }
+
+#table-2 td,
+#table-3 td,
+#table-4 td {
+  height: 50px; }
+
+.edit-appt a {
+  color: #F48A1F; }
+
+.edit-appt a:hover {
+  color: #1B2846;
+  text-decoration: none; }
+
+#newappt-btn {
+  width: 160px;
+  font-size: 16px;
+  padding: 0.4em 0;
+  background-color: #F48A1F; }
+
+#newappt-btn:hover {
+  background-color: #df760b;
+  border-color: #df760b; }
+
+.newappt-content label.bizlabel {
+  padding-left: 0; }
+
+/* Admin - Feature 3: FINANCES*/
+/* ----------------------------------------------- */
+.finance-td #table-2 th {
+  background-color: #8CC640;
+  color: #FFFFFF; }
+
+.finance-td {
+  margin-top: 4em; }
 
 @media (max-width: 767px) {
   #logo2,
