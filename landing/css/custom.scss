@@ -111,7 +111,7 @@ $ligthGray: #CCCCCC;
 	border: 2px solid $mainColor3;
 	color: $mainColor3;
 }
-.masthead-carousel .carousel-control.left, 
+.masthead-carousel .carousel-control.left,
 .masthead-carousel .carousel-control.right {
 	background-color: $mainColor1;
 }
@@ -129,7 +129,7 @@ p.text-center {
 .form-control,
 .well {
 	color: $darkGray;
-	background-color: rgba(255,255,255,0.2);
+	background-color: rgba(255,255,255,0.6);
 	border: 1px solid $mainColor2;
 	border-radius: 0;
 }
@@ -141,10 +141,19 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 	border: 1px solid rgba(244, 138, 31, 0.8);
 }
 
+#start-today a {
+	color: $mainColor2;
+}
+
+#start-today a:hover,
+#start-today:hover {
+	color: #FFFFFF;
+}
+
 /*About Section*/
 /* ----------------------------------------------- */
 
-.content-title span { 
+.content-title span {
 	border-bottom: 1px solid $mainColor1;
 }
 
@@ -203,4 +212,81 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 .team-member-title {
 	color: $mainColor1;
 	font-size: 16px;
+}
+
+
+/*Contact US Section*/
+/* ----------------------------------------------- */
+#contactus {
+	background: url(../img/masthead/softbg6.jpg) center top no-repeat;
+	@include bgimg;
+	border-top:none;
+}
+#back-to-top:hover {
+	background-color: #74a138;
+}
+.footer a {
+	color: $mainColor1;
+}
+.footer-social-link li a {
+	color: $mainColor1;
+}
+.copyright {
+	background-color: #f4f2f3;
+	color: $mainColor1;
+	font-size: 15px;
+}
+.copyright .footer-row {
+	margin-top: 0;
+}
+.footer .content-title {
+	border-bottom-color: rgba(255,255,255,0.2);
+}
+.masthead .btn-transparent, .footer .btn-transparent {
+	background-color: rgba(0,0,0,0.3);
+}
+.masthead .btn-transparent:hover, .footer .btn-transparent:hover {
+	color: #000;
+	background-color: #ffffff;
+	border: 1px solid #ffffff;
+}
+#contactus .content-title span {
+	color: #ffffff;
+}
+#newsletter_email {
+	border-color: $mainColor1;
+}
+
+@media (max-width: 767px) {
+	#logo2,
+	#logo3 {
+		width: 40px;
+	}
+	#logo3 {
+		display: none;
+	}
+	#logo {
+		width: 50%;
+		padding-top: 20px;
+	}
+}
+
+@media (max-width: 480px) {
+	#about {
+		margin-top: 30em;
+	}
+	// .masthead {
+	// 	height: 600px;
+	// 	padding-top: 3em;
+	// 	box-shadow: none;
+	// 	background: url(../img/masthead/landing-bg.jpg) center top no-repeat;
+	// 	@include bgimg;
+	// }
+	.navbar-header a {
+		width: 230px;
+	}
+	#logo {
+		width: 50%;
+		padding-top: 20px;
+	}
 }
