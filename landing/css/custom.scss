@@ -269,24 +269,52 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 		width: 50%;
 		padding-top: 20px;
 	}
+	.masthead-carousel .carousel-controls {
+		top:450px;
+	}
+	#form-animated,
+	#instant-chat-feature,
+	#instant-appt-feature,
+	#instant-payment-feature {
+		display:none;
+	}
+	#about .mini-feature .extra-img {
+		height: 450px;
+		background: url(../img/masthead/mobile_1.png) center top no-repeat;
+	}
+	#about .mini-feature .extra-img-b {
+		height: 450px;
+		background: url(../img/masthead/ipad_appt.png) center top no-repeat;
+	}
+	#about .mini-feature .extra-img-c {
+		height: 450px;
+		background: url(../img/masthead/ipad_1.png) center top no-repeat;
+	}
+
+	#about .mini-feature .pocketfeature {
+		width:40%;
+	}
 }
 
 @media (max-width: 480px) {
-	#about {
-		margin-top: 30em;
+
+	.masthead {
+		background: url(../img/masthead/landing-bg-mobile.jpg) center top no-repeat;
+		height: 600px;
+		padding-top: 3em;
+		box-shadow: none;
+		@include bgimg;
 	}
-	// .masthead {
-	// 	height: 600px;
-	// 	padding-top: 3em;
-	// 	box-shadow: none;
-	// 	background: url(../img/masthead/landing-bg.jpg) center top no-repeat;
-	// 	@include bgimg;
-	// }
 	.navbar-header a {
 		width: 230px;
 	}
 	#logo {
 		width: 50%;
 		padding-top: 20px;
+	}
+	#about .mini-feature .extra-img,
+	#about .mini-feature .extra-img-b,
+	#about .mini-feature .extra-img-c {
+		display:none;
 	}
 }
