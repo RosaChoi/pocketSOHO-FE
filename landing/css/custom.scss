@@ -68,16 +68,45 @@ $ligthGray: #CCCCCC;
 /*Masthead - Main Splash Image Section*/
 /* ----------------------------------------------- */
 
-.row {
+.row,
+#about-container {
+	margin-top: 180px;
+}
+.row-a {
 	margin-top: 80px;
 }
 
 .masthead {
-	height: 600px;
+	height: 700px;
 	padding-top: 3em;
 	box-shadow: none;
 	background: url(../img/masthead/landing-bg.jpg) center top no-repeat;
 	@include bgimg;
+	// border-bottom: 0;
+}
+.masthead1 {
+	height: 700px;
+	padding-top: 3em;
+	box-shadow: none;
+	background: url(../img/masthead/masthead2-bg.jpg) center top no-repeat;
+	@include bgimg;
+	border-bottom: 7px solid #fff;
+}
+.masthead2 {
+	height: 700px;
+	padding-top: 3em;
+	box-shadow: none;
+	background: url(../img/masthead/masthead3-bg.jpg) center top no-repeat;
+	@include bgimg;
+	border-bottom: 7px solid #fff;
+}
+.masthead3 {
+	height: 700px;
+	padding-top: 3em;
+	box-shadow: none;
+	background: url(../img/masthead/masthead1-bg.jpg) center top no-repeat;
+	@include bgimg;
+	border-bottom: 7px solid #fff;
 }
 
 .masthead-text {
@@ -87,14 +116,28 @@ $ligthGray: #CCCCCC;
 }
 
 .masthead-text p {
+	color: $mainColor3;
 	font-size: 16px;
 	text-shadow: none;
 }
 
+.whats-inside {
+	background-color: #FFFFFF;
+	margin-top: 180px
+}
+
+#nav-login-button,
 .masthead-actions .btn-primary,
 .btn-secondary {
 	@include signupButton;
 }
+
+#nav-login-button {
+	border-radius: 5px;
+	padding: 0.4em 2em;
+	top: 6px;
+}
+
 .btn-secondary {
 	background-color: transparent;
 	border: 2px solid $mainColor2;
@@ -117,6 +160,16 @@ $ligthGray: #CCCCCC;
 }
 
 /*Masthead /Slide 1 - Sign Up Form*/
+#slide1-left-box,
+#slide2-box,
+#slide3-box,
+#slide4-box
+ {
+	background-color: rgba(255,255,255,0.4);
+	padding: 2em;
+	padding-left:3em;
+	width: 500px;
+}
 
 h3.text-center {
 	text-transform: uppercase;
@@ -153,13 +206,29 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 /*About Section*/
 /* ----------------------------------------------- */
 
+#info-btn1,
+#info-btn2,
+#info-btn3 {
+	background-color: $mainColor1;
+	border-color: darken($mainColor1, 10%);
+	margin-top: 2em;
+}
+#info-btn1:hover,
+#info-btn2:hover,
+#info-btn3:hover {
+	background-color: darken($mainColor1, 10%)
+}
+.row-a {
+	padding-bottom: 2em;
+}
+
 .content-title span {
 	border-bottom: 1px solid $mainColor1;
 }
 
 .features {
 	padding-top: 1.5em;
-	font-size: 3em;
+	font-size: 2.5em;
 	@include mainFont;
 }
 
@@ -294,6 +363,9 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 	#about .mini-feature .pocketfeature {
 		width:40%;
 	}
+	.row-b {
+		text-align: center;
+	}
 }
 
 @media (max-width: 480px) {
@@ -317,4 +389,30 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 	#about .mini-feature .extra-img-c {
 		display:none;
 	}
+	#slide1-left-box,
+	#slide2-box,
+	#slide3-box,
+	#slide4-box
+	{
+		background-color: rgba(255,255,255,0.4);
+		padding: 1em 1em;
+		width: 310px;
+		height: 330px;
+	}
+	#slide1-left-box {
+		position: relative;
+		top: -100px;
+	}
+	#slide2-button,
+	#slide3-button {
+		position: relative;
+		top: -20px;
+	}
+	.masthead2 {
+		background: url(../img/masthead/mobile-piano.jpg) center top no-repeat;
+	}
+	.masthead3 {
+		background: url(../img/masthead/makeup-mobile.jpg) center top no-repeat;
+	}
+
 }

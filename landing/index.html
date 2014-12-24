@@ -39,636 +39,241 @@
 
 <body class=" ">
 
-<div id="wrapper">
+  <div id="wrapper">
 
-  <header class="navbar navbar-inverse" role="banner">
-
-    <div class="container">
-
-      <div class="navbar-header">
-        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-            <img id="logo2" src="./img/mobilemenu-logo.svg" alt="pocketSOHO">
-            <img id="logo3" src="./img/mobilemenu-logo1.svg" alt="pocketSOHO">
-        </button>
-        <a href="index.html" class="navbar-brand navbar-brand-img">
-          <img id="logo" src="./img/logo.svg" alt="pocketSOHO">
-        </a>
-      </div> <!-- /.navbar-header -->
-
-
-      <nav id="main-nav" class="collapse navbar-collapse" role="navigation">
-
-        <ul class="nav navbar-nav navbar-right mainnav-menu">
-
-          <li class="active">
-            <a href="index.html">Home</a>
-          </li>
-
-          <li class="">
-            <a data-target-id="about" href="#">About</a>
-          </li>
-
-          <li class="">
-            <a data-target-id="team" href="#">Team</a>
-          </li>
-
-          <!-- <li class="">
-            <a data-target-id="pricing" href="#">Pricing</a>
-          </li> -->
-
-          <li class="">
-            <a data-target-id="contactus" href="#">Contact</a>
-          </li>
-
-          <li>
-            <a href="../admin/account-login-social.html">Login</a>
-          </li>
-
-        </ul>
-
-      </nav>
-
-    </div> <!-- /.container -->
-
-  </header>
-
-
+    <header class="navbar navbar-inverse" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+              <img id="logo2" src="./img/mobilemenu-logo.svg" alt="pocketSOHO">
+              <img id="logo3" src="./img/mobilemenu-logo1.svg" alt="pocketSOHO">
+          </button>
+          <a href="index.html" class="navbar-brand navbar-brand-img">
+            <img id="logo" src="./img/logo.svg" alt="pocketSOHO">
+          </a>
+        </div>
+        <nav id="main-nav" class="collapse navbar-collapse" role="navigation">
+          <ul class="nav navbar-nav navbar-right mainnav-menu">
+            <li>
+              <a href="../admin/account-login-social.html" id="nav-login-button" class="btn btn-primary" >LOG IN</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
     <div class="masthead">
-
       <div class="container">
-            <!-- starts carousel -->
-
         <div id="masthead-carousel" class="carousel masthead-carousel slide">
           <div class="carousel-inner">
-
             <div id="slide1" class="item active">
-
               <div class="row">
-
                 <div class="col-md-6 masthead-text animated fadeInDownBig">
-                  <h1 class="masthead-title">Introducing pocketSOHO</h1>
-                  <p class="masthead-">
-                  Small and Home Business Owner Super Hero! <br/>
-                  Love being your own boss but hate the admin part?
-                  </p>
-                  <br>
-
-                  <div class="masthead-actions">
-                    <a href="../admin/account-signup.html" class="btn btn-primary btn-jumbo">
-                    Start Your Free Trial
-                    </a>
-                  </div> <!-- /.masthead-actions -->
-                </div> <!-- /.masthead-text -->
-
+                  <div id="slide1-left-box">
+                    <h1 class="masthead-title">Introducing pocketSOHO</h1>
+                    <p class="masthead-">
+                      Small and Home Business Owner Super Hero! <br/>
+                      Love being your own boss but hate the admin part?
+                    </p>
+                    <div class="masthead-actions">
+                      <a href="../admin/account-signup.html" class="btn btn-primary btn-jumbo">
+                      Start Your Free Trial
+                      </a>
+                    </div>
+                  </div>
+                </div>
                 <div id="form-animated" class="col-md-6 masthead-img animated fadeInRightBig">
                   <form class="form masthead-form well">
-
                     <h3 class="text-center">Start Your Free Trial!</h3>
-
                     <p class="text-center">Be your own boss. <br/>
                      Stop wasting time on scheduling and payment.</p>
-
                     <br>
-
                     <div class="form-group">
-                      <!-- <label class="" for="full_name">Full Name</label> -->
-                      <input type="text" id="full_name" placeholder="Your Name" class="form-control">
-                    </div> <!-- /.form-group -->
-
-                    <div class="form-group">
-                      <!-- <label class="" for="email_address">Email Address</label> -->
                       <input type="email" id="email_address" placeholder="Your Email" class="form-control">
-                    </div> <!-- /.form-group -->
-
+                    </div>
                     <div class="form-group">
-                      <!-- <label class="" for="organization">Organization</label> -->
-                      <input type="text" id="organization" placeholder="Organization Name" class="form-control">
-                    </div> <!-- /.form-group -->
+                      <input type="text" id="full_name" placeholder="Your Name" class="form-control">
+                    </div>
+                    <div class="form-group">
+                      <input type="username" id="username" placeholder="Your Username" class="form-control">
+                    </div>
+                    <div class="form-group">
+                      <input type="password" class="form-control" id="login-password" placeholder="Your Password" tabindex="4">
+                    </div>
 
                     <div class="form-group">
                       <button type="submit" id="start-today" class="btn btn-secondary btn-jumbo btn-block"><a href="../admin/account-signup.html">Get Started Today!</a></button>
-                    </div> <!-- /.form-group -->
-
+                    </div>
                   </form>
-                </div> <!-- /.masthead-img -->
-
-              </div> <!-- /.row -->
-
-            </div> <!-- slide1 end -->
-
-            <div id="slide2" class="item">
-
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="masthead1">
+      <div class="container">
+        <div id="masthead-carousel1" class="carousel masthead-carousel slide">
+          <div class="carousel-inner">
+            <div id="slide2" class="item active">
               <div class="row">
-
                 <div class="col-md-6 masthead-text animated fadeInLeftBig">
-                  <h1 class="masthead-title">Real Time Messaging!</h1>
-
-                  <p class="masthead-">
-                  Our In-App Messenger allows you to communicate with your customers 24/7.
-                  </p>
-
-                  <br>
-
-                  <div class="masthead-actions">
-                    <a href="../admin/account-signup.html" class="btn btn-primary btn-jumbo">
-                    Start Your Free Trial
-                    </a>
-                  </div> <!-- /.masthead-actions -->
-                </div> <!-- /.masthead-text -->
-
+                  <div id="slide2-box">
+                    <h1 class="masthead-title">Real Time Messaging!</h1>
+                    <p class="masthead-">
+                      Our In-App Messenger allows you to communicate with your customers 24/7.
+                    </p>
+                    <br>
+                    <div class="masthead-actions">
+                      <a id="slide2-button" href="../admin/account-signup.html" class="btn btn-primary btn-jumbo">
+                        Start Your Free Trial
+                      </a>
+                    </div>
+                  </div>
+                </div>
                 <div id="instant-chat-feature" class="col-md-6 masthead-img animated fadeInUpBig">
                   <img src="img/masthead/mobile_1.png" alt="slide2" class="img-responsive" />
-                </div> <!-- /.masthead-img -->
-
-              </div> <!-- /.row -->
-
-            </div> <!-- /.item -->
-
-            <div id="slide3" class="item">
-
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="masthead2">
+      <div class="container">
+        <div id="masthead-carousel2" class="carousel masthead-carousel slide">
+          <div class="carousel-inner">
+            <div id="slide3" class="item active">
               <div class="row">
-
                 <div class="col-md-6 masthead-text animated fadeInUpBig">
-                  <h1 class="masthead-title">Instant (re)Scheduling!</h1>
-
-                  <p class="masthead-">
-                  See all your appointments at a glance.  Manage, schedule and re-schedule with ease.
-                  </p>
-
-                  <br>
-
-                  <div class="masthead-actions">
-                    <a href="../admin/account-signup.html" class="btn btn-primary btn-jumbo">
-                    Start Your Free Trial
-                    </a>
-                  </div> <!-- /.masthead-actions -->
-                </div> <!-- /.masthead-text -->
-
+                  <div id="slide3-box">
+                    <h1 class="masthead-title">Instant (re)Scheduling!</h1>
+                    <p class="masthead-">
+                      See all your appointments at a glance.  Manage, schedule and re-schedule with ease.
+                    </p>
+                    <br>
+                    <div class="masthead-actions">
+                      <a id="slide3-button" href="../admin/account-signup.html" class="btn btn-primary btn-jumbo">
+                        Start Your Free Trial
+                      </a>
+                    </div>
+                  </div>
+                </div>
                 <div id="instant-appt-feature" class="col-md-6 masthead-img animated pulse">
                   <img src="img/masthead/ipad_appt.png" alt="slide2" class="img-responsive" />
-                </div> <!-- /.masthead-img -->
-
-              </div> <!-- /.row -->
-
-            </div> <!-- /.item -->
-
-            <div id="slide4" class="item">
-
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="masthead3">
+      <div class="container">
+        <div id="masthead-carousel3" class="carousel masthead-carousel slide">
+          <div class="carousel-inner">
+            <div id="slide4" class="item active">
               <div class="row">
-
                 <div class="col-md-6 masthead-text animated fadeInDownBig">
-                  <h1 class="masthead-title">Get paid on time.</h1>
-
-                  <p class="masthead-">
-                  Easy invoicing, online payment and reporting for tax time.
-                  </p>
-
-                  <br>
-
-                  <div class="masthead-actions">
-
-                    <a href="../admin/account-signup.html" class="btn btn-primary btn-jumbo">
-                    Start Your Free Trial
-                    </a>
-                  </div> <!-- /.masthead-actions -->
-                </div> <!-- /.masthead-text -->
-
+                  <div id="slide4-box">
+                    <h1 class="masthead-title">Get paid on time.</h1>
+                    <p class="masthead-">
+                      Easy invoicing, online payment and reporting for tax time.
+                    </p>
+                    <br>
+                    <div class="masthead-actions">
+                      <a href="../admin/account-signup.html" class="btn btn-primary btn-jumbo">
+                        Start Your Free Trial
+                      </a>
+                    </div>
+                  </div>
+                </div>
                 <div id="instant-payment-feature" class="col-md-6 masthead-img animated fadeInUpBig">
                   <img src="img/masthead/ipad_1.png" style="width: 85%; height: 325px;"></img>
-
-                </div> <!-- /.masthead-img -->
-
-              </div> <!-- /.row -->
-
-            </div> <!-- /.item -->
-
-          </div>  <!-- /.carousel-inner -->
-          <!-- Carousel nav -->
-
-          <div class="carousel-controls">
-            <a class="carousel-control left" href="#masthead-carousel" data-slide="prev">&lsaquo;</a>
-            <a class="carousel-control right" href="#masthead-carousel" data-slide="next">&rsaquo;</a>
+                </div>
+              </div>
+            </div>
           </div>
-
-        </div> <!-- /.masthead-carousel -->
-
         </div>
-
-    </div> <!-- /.masthead -->
-
-
-
+      </div>
+    </div>
     <div id="about" class="content">
-
       <div class="container">
-
         <h4 class="content-title">
-          <span class="features">Meet pocketSOHO</span>
+          <span class="features">Easiest way to manage your business on the go!</span>
         </h4>
-
-        <br>
-
-        <div class="row">
-
+        <div class="row-a">
           <div class="mini-feature">
             <img class="pocketfeature" src="./img/chat_icon.svg" alt="Messaging">
-            <div class="extra-img"></div>
-
             <div class="mini-feature-text">
-              <h5 class="mini-feature-title">Real Time Messaging</h5>
-              <p>Our in-app messenger allows you to communicate with your customers 24/7 because we know how important it is for your business. pochetSOHO consolidate all your communication, scheduling and payment in one simple app.</p>
+              <h5 class="mini-feature-title">Connetct</h5>
             </div>
-          </div> <!-- /.mini-feature -->
-
+          </div>
           <div class="mini-feature">
             <img class="pocketfeature" src="./img/schedule02.svg" alt="Scheduling">
-            <div class="extra-img-b"></div>
-
             <div class="mini-feature-text">
-              <h5 class="mini-feature-title">Instant (re)Scheduling</h5>
-
-              <p>Scheduling, rescheduling and keeping track of appointments are often a headache for small business owners. See all your appointments at a glance, manage, schedule and re-schedule with just a few clicks.</p>
+              <h5 class="mini-feature-title">Schedule Meetings</h5>
             </div>
-          </div> <!-- /.mini-feature -->
-
+          </div>
           <div class="mini-feature">
             <img class="pocketfeature" src="./img/payment02.svg" alt="Payment">
-            <div class="extra-img-c"></div>
-
             <div class="mini-feature-text">
-              <h5 class="mini-feature-title">Get paid on time</h5>
-
-              <p>Because getting paid for your hard work should not be such a hassle, pochetSOHO designed a very simple in-app payment application allowing you to invoice, track payments, remind your customers and even helps you with reporting during tax time.</p>
+              <h5 class="mini-feature-title">Get paid</h5>
             </div>
-          </div> <!-- /.mini-feature -->
-
-        </div> <!-- /.row -->
-
-        <div class="row-divider"></div> <!-- /.row-divider -->
-
-
-        <div class="row">
-
-          <div class="col-sm-6 col-sm-push-6">
-
-            <h4 class="content-title">
-              <span class="feature-description">What's Inside</span>
-            </h4>
-
-            <p>pocketSOHO helps SMALL or HOME Business owners run their business smoothly and efficiently. We bring together and simplify the repetitive task that sucks most of you time so you can enjoy spending more time doing what you love and making money!</p>
-
-            <div class="row">
-              <div class="col-sm-6">
-                <ul class="icons-list">
-                  <li>
-                    <i class="icon-li fa fa-check text-primary"></i>
-                    Instant Message Customers
-                  </li>
-                  <li>
-                    <i class="icon-li fa fa-check text-primary"></i>
-                    Schedule appointments
-                  </li>
-                  <li>
-                    <i class="icon-li fa fa-check text-primary"></i>
-                     Send Invoices & Track Payments
-                  </li>
-                </ul>
-              </div>
-
-              <div class="col-sm-6">
-                <ul class="icons-list">
-                  <li>
-                    <i class="icon-li fa fa-check text-primary"></i>
-                    Integrated & Secured Online Payment
-                  </li>
-                  <li>
-                    <i class="icon-li fa fa-check text-primary"></i>
-                    Track & Visual Income
-                  </li>
-                  <li>
-                    <i class="icon-li fa fa-check text-primary"></i>
-                    Speed-up Tax Reporting
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <br/>
-            <p>Easiest way of combining the most needed 3 features to run a small office, home office, individual service business such as piano teacher, therapist, tutor, yoga teacher, nanny, and dog walker.</p>
-            <br/>
-
-             <a href="../admin/account-signup.html" class="smallbtn btn btn-default">Start FREE Trial</a>
-
-          </div> <!-- /.col -->
-
-
-
-          <div class="col-sm-6 col-sm-pull-6 text-center">
-
-            <br><br>
-
-            <img src="./img/masthead/browser.png" class="img-responsive" alt="Macbook">
-
-          </div> <!-- /.col -->
-
-        </div> <!-- /.row -->
-
-
-
-        <div class="row-divider"></div> <!-- /.row-divider -->
-
-
-        <!-- FOR LATER USE - WHEN WE HAVE SOME USERS FEEDBACK -->
-        <!-- <div class="row">
-
-          <div class="col-sm-6">
-
-            <h4 class="content-title">
-              <span>Latest News</span>
-            </h4>
-
-            <div class="recent-news">
-
-              <div class="recent-news-item clearfix"><div class="recent-news-item-date">13<span>Jan</span></div>
-                <div class="recent-news-item-description">
-                  <h5 class="recent-news-item-title"><a href="http://inovado.mintithemes.com/this-is-a-standard-post/" title="This is a Standard Post">This is a Standard Post</a></h5>
-                  <span class="recent-news-item-comments">7 Comments</span>
-                  <div class="recent-news-item-excerpt">Praesent augue arcu, ornare ut tincidunt eu, mattis a libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames... <a href="http://inovado.mintithemes.com/this-is-a-standard-post/" class="recent-news-item-more">Read More →</a></div>
-                </div>
-              </div> --> <!-- /.recent-news-item -->
-
-             <!--  <div class="recent-news-item clearfix"><div class="recent-news-item-date">04<span>Jan</span></div>
-                <div class="recent-news-item-description">
-                  <h5 class="recent-news-item-title"><a href="http://inovado.mintithemes.com/this-is-a-standard-post/" title="This is a Standard Post">This is a Standard Post</a></h5>
-                  <span class="recent-news-item-comments">2 Comments</span>
-                  <div class="recent-news-item-excerpt">Praesent augue arcu, ornare ut tincidunt eu, mattis a libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames... <a href="http://inovado.mintithemes.com/this-is-a-standard-post/" class="recent-news-item-more">Read More →</a></div>
-                </div>
-              </div> --> <!-- /.recent-news-item -->
-
-            <!-- </div>  --><!-- /.recent-news -->
-
-            <!-- <br class="visible-xs">
-
-          </div>  --><!-- /.col -->
-
-
-
-         <!--  <div class="col-sm-6">
-
-            <h4 class="content-title">
-              <span>Testimonials</span>
-
-              <a class="btn btn-default btn-sm carousel-prev" href="#clients-carousel" data-slide="prev">&lsaquo;</a>
-              <a class="btn btn-default btn-sm carousel-next" href="#clients-carousel" data-slide="next">&rsaquo;</a>
-            </h4>
-
-            <div id="clients-carousel" class="carousel slide" data-interval="0">
-              <div class="carousel-inner">
-
-                <div class="item active">
-
-                  <div class="testimonial">
-
-                    <p class="testimonial-text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, sed, nulla, provident porro quaerat aperiam eum tempore fugiat dicta obcaecati itaque adipisci perspiciatis unde voluptatibus architecto vitae reiciendis distinctio incidunt! Tempore quae impedit velit voluptatum consequuntur cupiditate.
-                    </p>
-
-                    <div class="testimonials-arrow"></div>
-
-                    <div class="testimonial-author">
-                      <div class="testimonial-image"><img alt="" src="./img/avatars/avatar-1-lg.jpg"></div>
-
-                      <div class="testimonial-author-info">
-                        <h5><a href="#">Rod Howard</a></h5> Jumpstart Themes
-                      </div>
-                    </div>
-                  </div> --> <!-- /.testimonial -->
-
-                <!-- </div>  --><!-- /.item -->
-
-                <!-- <div class="item">
-
-                  <div class="testimonial">
-
-                    <p class="testimonial-text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, sed, nulla, provident porro quaerat aperiam eum tempore fugiat dicta obcaecati itaque adipisci perspiciatis unde voluptatibus architecto vitae reiciendis distinctio incidunt! Tempore quae impedit velit voluptatum consequuntur cupiditate.
-                    </p>
-
-                    <div class="testimonials-arrow"></div>
-
-                    <div class="testimonial-author">
-                      <div class="testimonial-image"><img alt="" src="./img/avatars/avatar-2-lg.jpg"></div>
-
-                      <div class="testimonial-author-info">
-                        <h5><a href="#">Nikita Williams</a></h5> Nikita Chanel
-                      </div>
-                    </div>
-                  </div> --> <!-- /.testimonial -->
-
-                <!-- </div> --> <!-- /.item -->
-
-              <!-- </div>  --><!-- /.carousel-inner -->
-
-            <!-- </div> --> <!-- /.carousel -->
-
-          <!-- </div> --> <!-- /.col -->
-
-        <!-- </div>  --><!-- /.row -->
+          </div>
+        </div>
+        <div class="row-b">
+          <a id="info-btn1" href="../landing/about.html" class="btn btn-primary btn-jumbo">
+            Learn more
+          </a>
+          <a id="info-btn2" href="../admin/account-signup.html" class="btn btn-primary btn-jumbo">
+            Start Your Free Trial
+          </a>
+        </div>
 
         <div id="team" class="content">
-
           <div class="container">
-
             <h4 class="content-title">
               <span class="features">Meet Our Team</span>
             </h4>
-
-            <br>
-
-            <div class="row">
-
+            <div class="row-a">
               <div class="mini-feature">
-                 <!-- <i class="fa fa-globe mini-feature-icon text-secondary"></i> -->
-
-                  <div class="mini-feature-text">
-                    <img class="pocketfeature" src="./img/devices/sumi.png" alt="Sumi Levy">
-                    <h5 class="team-member">Sumi Levy</h5>
-                    <h6 class="team-member-title">Chief “Can-Do” Officer | @sumi_sv</h6>
-                    <p>Sumi is a momtrepreneur with 20 years of experience as a small business owner: private piano instructor, opera accompanist, Korean immersion pre-school Director and event floral designer. Passionate about education, edtech, startups, music and art.</p>
-                  </div>
-              </div> <!-- /.mini-feature -->
-
-              <div class="mini-feature">
-                <!-- <i class="fa fa-dashboard mini-feature-icon text-secondary"></i> -->
-
-              <div class="mini-feature-text">
-                <img class="pocketfeature" src="./img/devices/janet.png" alt="Janet Yi">
-                <h5 class="team-member">Janet Yi</h5>
-                <h6 class="team-member-title">Developer | janetyi.com</h6>
-                <p>Janet is a Software Engineer, Bay Area native, and world traveler. Having an extensive background working with startups, she is thrilled to be working on a product that will help small businesses owners/freelancers far and wide!</p>
+                <div class="mini-feature-text">
+                  <img class="pocketfeature" src="./img/devices/sumi.png" alt="Sumi Levy">
+                  <h5 class="team-member">Sumi Levy</h5>
+                  <h6 class="team-member-title">Chief “Can-Do” Officer | @sumi_sv</h6>
+                  <p>Sumi is a momtrepreneur with 20 years of experience as a small business owner: private piano instructor, opera accompanist, Korean immersion pre-school Director and event floral designer. Passionate about education, edtech, startups, music and art.</p>
+                </div>
               </div>
-          </div> <!-- /.mini-feature -->
+              <div class="mini-feature">
+                <div class="mini-feature-text">
+                  <img class="pocketfeature" src="./img/devices/janet.png" alt="Janet Yi">
+                  <h5 class="team-member">Janet Yi</h5>
+                  <h6 class="team-member-title">Developer | janetyi.com</h6>
+                  <p>Janet is a Software Engineer, Bay Area native, and world traveler. Having an extensive background working with startups, she is thrilled to be working on a product that will help small businesses owners/freelancers far and wide!</p>
+                </div>
+              </div>
+              <div class="mini-feature">
+                <div class="mini-feature-text">
+                  <img class="pocketfeature" src="./img/devices/rosa.png" alt="Rosa Choi">
+                  <h5 class="team-member">Rosa Choi</h5>
+                  <h6 class="team-member-title">Front-End Developer | @RosaCodie</h6>
+                  <p>Rosa is a designer turned developer. Web design and development are her true passions, followed closely by art, and travel. She merges art and technology to create a refined digital experience that works seamlessly across all devices.</p>
+                </div>
+              </div>
+            </div>
 
-          <div class="mini-feature">
-            <!-- <i class="fa fa-html5 mini-feature-icon text-secondary"></i> -->
-
-            <div class="mini-feature-text">
-              <img class="pocketfeature" src="./img/devices/rosa.png" alt="Rosa Choi">
-              <h5 class="team-member">Rosa Choi</h5>
-              <h6 class="team-member-title">Front-End Developer | @RosaCodie</h6>
-              <p>Rosa is a designer turned developer. Web design and development are her true passions, followed closely by art, and travel. She merges art and technology to create a refined digital experience that works seamlessly across all devices.</p>
             </div>
           </div>
-
         </div>
       </div>
-
-      </div> <!-- /.container -->
-
-    </div> <!-- /.content -->
-
-    <!-- <div id="pricing" class="content">
-
-      <div class="container">
-          <h4 class="content-title">
-              <span class="about">Pricing</span>
-            </h4>
-
-            <br>
-
-        <div class="text-center">
-          <h2 class="30days">Start your 30-day free trial today!</h2>
-          <h4 class="trial">No sign-up fees. No credit card required. No long-term commitments.</h4>
-
-          <br>
-
-          <div class="btn-group" data-toggle="buttons">
-              <label class="btn btn-default active" style="width: 125px;">
-                <input type="radio" name="options" id="option1"> Monthly
-              </label>
-              <label class="btn btn-default" style="width: 125px;">
-                <input type="radio" name="options" id="option2"> Yearly <small>(15% off)</small>
-              </label>
-            </div>
-
-          <br><br><br><br>
-        </div> -->
-
-        <!-- <div  class="row">
-
-            <div class="col-sm-12 col-md-10 col-md-offset-1">
-
-              <div class="row"> -->
-
-                <!-- <div class="col-sm-4"> -->
-
-                  <!-- <div class="pricing-plan">
-
-                    <div class="pricing-header">
-                      <h3 class="pricing-plan-title">Starter</h3>
-                      <p class="pricing-plan-label">For Individuals</p>
-                    </div>
-
-                    <div class="pricing-plan-price">
-                      <span class="pricing-plan-amount">$9</span> / month
-                    </div>
-
-                    <ul class="pricing-plan-details">
-                      <li><strong>10 GB</strong> Disk Space</li>
-                      <li><strong>5</strong> Sub Domains</li>
-                      <li><strong>10</strong> MySQL Databases</li>
-                      <li><strong>1</strong> User</li>
-                    </ul>
-
-                    <a href="../admin/account-signup.html" class="choosebtn btn btn-primary">Choose Plan</a>
-
-                  </div>  -->
-
-                <!-- </div>  -->
-
-
-                <!-- <div class="col-sm-4">
-
-                  <div class="pricing-plan">
-
-                    <div class="pricing-header">
-                      <h3 class="pricing-plan-title">Basic</h3>
-                      <p class="pricing-plan-label">For blogs &amp; small business</p>
-                    </div>
-
-                    <div class="pricing-plan-price">
-                      <span class="pricing-plan-amount">$24</span> / month
-                    </div>
-
-                    <ul class="pricing-plan-details">
-                      <li><strong>20 GB</strong> Disk Space</li>
-                      <li><strong>10</strong> Sub Domains</li>
-                      <li><strong>50</strong> MySQL Databases</li>
-                      <li><strong>Unlimited</strong> Users</li>
-                    </ul>
-
-                    <a href="../admin/account-signup.html" class="choosebtn btn btn-primary">Choose Plan</a>
-
-                  </div>
-
-                </div>  -->
-
-<!--
-                <div class="col-sm-4">
-                  <div class="pricing-plan">
-
-                    <div class="pricing-plan-ribbon-secondary ui-tooltip" title="" data-original-title="Best Value!">
-                      <i class="fa fa-star"></i>
-                    </div>
-
-                    <div class="pricing-header">
-                      <h3 class="pricing-plan-title">Pro</h3>
-                      <p class="pricing-plan-label">For consultants</p>
-                    </div>
-
-                    <div class="pricing-plan-price">
-                      <span class="pricing-plan-amount">$49</span> / month
-                    </div>
-
-                    <ul class="pricing-plan-details">
-                      <li><span class="pricing-plan-help" title="" data-content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus." data-original-title="What's a user?"><strong>40 GB</strong> Disk Space</span></li>
-                      <li><span class="pricing-plan-help" title="" data-content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus." data-original-title="What's a project?"><strong>20</strong> Sub Domains</span></li>
-                      <li><span class="pricing-plan-help" title="" data-content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus." data-original-title="What's storage for?"><strong>80</strong> MySQL Databases</span></li>
-                      <li><span class="pricing-plan-help" title="" data-content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus." data-original-title="What's storage for?"><strong>Unlimited</strong> Users</span></li>
-                    </ul>
-
-                    <a href="../admin/account-signup.html" class="choosebtn btn btn-primary">Choose Plan</a>
-
-                  </div>
-
-                </div>  -->
-<!--
-              </div>
-
-            </div>
-
-          </div>  -->
-
-          <!-- <br>
-
-      </div>
-
-    </div>  -->
-
-
-
-
-
-</div> <!-- /#wrapper -->
-
-<footer id = "contactus" class="footer">
-
-	<div class="container">
-
+    </div>
+  <footer id = "contactus" class="footer">
+  	<div class="container">
       <div class="row">
-
         <div class="col-sm-4">
           <h4 class="content-title">
             <span>Contact Us</span>
@@ -679,12 +284,10 @@
                 543 Howard Street, 5th Floor<br>
                 San Francisco, CA 94105
               </li>
-
               <li>
                 <i class="icon-li fa fa-phone"></i>
                 +1 415 787 0117
               </li>
-
               <li>
                 <i class="icon-li fa fa-envelope"></i>
                 <a href="mailto:team@pocketSOHO.com">team@pocketSOHO.com</a>
@@ -692,79 +295,60 @@
             </ul>
         </div>
 
-      <div class="col-sm-4">
-
-        <h4 class="content-title">
-          <span>Stay Connected</span>
-        </h4>
-
-        <p> You are awesome. Please contact us!</p>
-
-        <br>
-
-        <ul class="footer-social-link">
-          <li>
-            <a href="https://www.facebook.com/pages/pocketSOHO/1462585254012308" target="_blank" class="ui-tooltip" title="Facebook" data-placement="bottom">
-              <i class="fa fa-facebook"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/PocketSOHO" target="_blank" class="ui-tooltip" title="Twitter" data-placement="bottom">
-              <i class="fa fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a href="javascript:;" class="ui-tooltip" title="LinkedIn" data-placement="bottom">
-              <i class="fa fa-linkedin"></i>
-            </a>
-          </li>
-        </ul>
-
-      </div> <!-- /.col -->
-
+        <div class="col-sm-4">
+          <h4 class="content-title">
+            <span>Stay Connected</span>
+          </h4>
+          <p> You are awesome. Please contact us!</p>
+          <br>
+          <ul class="footer-social-link">
+            <li>
+              <a href="https://www.facebook.com/pages/pocketSOHO/1462585254012308" target="_blank" class="ui-tooltip" title="Facebook" data-placement="bottom">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/PocketSOHO" target="_blank" class="ui-tooltip" title="Twitter" data-placement="bottom">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;" class="ui-tooltip" title="LinkedIn" data-placement="bottom">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div> <!-- /.col -->
 
         <div class="col-sm-4">
-
-        <h4 class="content-title">
-          <span>Stay Updated</span>
-        </h4>
-
-        <p>Get emails about new theme launches &amp;  future updates.</p>
-
-        <form action="/" class="form">
-
-          <div class="form-group">
-            <!-- <label>Email: <span class="required">*</span></label> -->
-            <input class="form-control" id="newsletter_email" name="newsletter_email" type="text" value="" required="" placeholder="Email Address">
-          </div> <!-- /.form-group -->
-
-          <div class="form-group">
-            <button class="btn btn-transparent">Subscribe Me</button>
-          </div> <!-- /.form-group -->
-
-        </form>
-
-      </div> <!-- /.col -->
-
+          <h4 class="content-title">
+            <span>Stay Updated</span>
+          </h4>
+          <p>Get emails about new theme launches &amp;  future updates.</p>
+          <form action="/" class="form">
+            <div class="form-group">
+              <!-- <label>Email: <span class="required">*</span></label> -->
+              <input class="form-control" id="newsletter_email" name="newsletter_email" type="text" value="" required="" placeholder="Email Address">
+            </div> <!-- /.form-group -->
+            <div class="form-group">
+              <button class="btn btn-transparent">Subscribe Me</button>
+            </div> <!-- /.form-group -->
+          </form>
+        </div> <!-- /.col -->
       </div> <!-- /.row -->
+	  </div> <!-- /.container -->
 
-	</div> <!-- /.container -->
+  </footer>
 
-</footer>
-
-<footer class="copyright">
-  <div class="container">
-
-    <div class="footer-row row">
-
-      <div class="col-sm-12">
-        <p>Copyright &copy; 2014 pocketSOHO.</p>
-      </div> <!-- /.col -->
-
-    </div> <!-- /.row -->
-
-  </div>
-</footer>
+  <footer class="copyright">
+    <div class="container">
+      <div class="footer-row row">
+        <div class="col-sm-12">
+          <p>Copyright &copy; 2014 pocketSOHO.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
 <!-- Bootstrap core JavaScript
