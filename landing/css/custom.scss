@@ -88,7 +88,7 @@ $ligthGray: #CCCCCC;
 	height: 700px;
 	padding-top: 3em;
 	box-shadow: none;
-	background: url(../img/masthead/masthead2-bg.jpg) center top no-repeat;
+	background: url(../img/masthead/masthead2a-bg.jpg) center top no-repeat;
 	@include bgimg;
 	border-bottom: 7px solid #fff;
 }
@@ -96,7 +96,7 @@ $ligthGray: #CCCCCC;
 	height: 700px;
 	padding-top: 3em;
 	box-shadow: none;
-	background: url(../img/masthead/masthead3-bg.jpg) center top no-repeat;
+	background: url(../img/masthead/masthead3c-bg.jpg) center top no-repeat;
 	@include bgimg;
 	border-bottom: 7px solid #fff;
 }
@@ -104,7 +104,7 @@ $ligthGray: #CCCCCC;
 	height: 700px;
 	padding-top: 3em;
 	box-shadow: none;
-	background: url(../img/masthead/masthead1-bg.jpg) center top no-repeat;
+	background: url(../img/masthead/masthead1c-bg.jpg) center top no-repeat;
 	@include bgimg;
 	border-bottom: 7px solid #fff;
 }
@@ -165,10 +165,17 @@ $ligthGray: #CCCCCC;
 #slide3-box,
 #slide4-box
  {
-	background-color: rgba(255,255,255,0.4);
+	background-color: rgba(255,255,255,0.8);
 	padding: 2em;
 	padding-left:3em;
 	width: 500px;
+}
+
+.masthead-title {
+	font-size: 45px;
+}
+.masthead-text p {
+	font-size:20px;
 }
 
 h3.text-center {
@@ -326,7 +333,11 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 	border-color: $mainColor1;
 }
 
-@media (max-width: 767px) {
+.masthead- {
+	font-weight: 600;
+}
+
+@media (max-width: 768px) {
 	#logo2,
 	#logo3 {
 		width: 40px;
@@ -370,6 +381,13 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 
 @media (max-width: 480px) {
 
+	h1 {
+		margin-bottom: 0.5em;
+	}
+	.masthead-text p {
+		font-size: 17px;
+	}
+
 	.masthead {
 		background: url(../img/masthead/landing-bg-mobile.jpg) center top no-repeat;
 		height: 600px;
@@ -394,8 +412,8 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 	#slide3-box,
 	#slide4-box
 	{
-		background-color: rgba(255,255,255,0.4);
-		padding: 1em 1em;
+		background-color: rgba(255,255,255,0.8);
+		padding-left: 0.2em;
 		width: 310px;
 		height: 330px;
 	}
@@ -408,11 +426,11 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 		position: relative;
 		top: -20px;
 	}
-	.masthead2 {
-		background: url(../img/masthead/mobile-piano.jpg) center top no-repeat;
-	}
-	.masthead3 {
-		background: url(../img/masthead/makeup-mobile.jpg) center top no-repeat;
+	#slide1-left-box p,
+	#slide2-box p,
+	#slide3-box p,
+	#slide4-box p {
+		line-height: 1.4;
 	}
 
 }
